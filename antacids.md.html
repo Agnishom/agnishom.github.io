@@ -1,505 +1,626 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8" />
-      <title>antacids</title>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    jax: ["input/TeX","output/HTML-CSS"],
-    extensions: [],
-    TeX: {
-      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-    },
-    showMathMenu: false
-  });
-</script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
-</script>
-      <style>.markdown-preview, .markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; overflow: scroll; box-sizing: border-box; padding: 20px; background-color: rgb(255, 255, 255); }
-.markdown-preview > :first-child, .markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
-.markdown-preview > :last-child, .markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
-.markdown-preview a:not([href]), .markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
-.markdown-preview .absent, .markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
-.markdown-preview .anchor, .markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
-.markdown-preview .anchor:focus, .markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
-.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
-.markdown-preview h1 .octicon-link, .markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview h2 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview h3 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview h4 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview h5 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview h6 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
-.markdown-preview h1:hover .anchor, .markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview h2:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview h3:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview h4:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview h5:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview h6:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
-.markdown-preview h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview h6:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
-.markdown-preview h1 tt, .markdown-preview[data-use-github-style] h1 tt, .markdown-preview h2 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview h3 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview h4 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview h5 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview h6 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview h1 code, .markdown-preview[data-use-github-style] h1 code, .markdown-preview h2 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview h3 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview h4 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview h5 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview h6 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
-.markdown-preview h1, .markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview h1 .anchor, .markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
-.markdown-preview h2, .markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview h2 .anchor, .markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
-.markdown-preview h3, .markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
-.markdown-preview h3 .anchor, .markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
-.markdown-preview h4, .markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
-.markdown-preview h4 .anchor, .markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
-.markdown-preview h5, .markdown-preview[data-use-github-style] h5 { font-size: 1em; }
-.markdown-preview h5 .anchor, .markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
-.markdown-preview h6, .markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
-.markdown-preview h6 .anchor, .markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
-.markdown-preview p, .markdown-preview[data-use-github-style] p, .markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote, .markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol, .markdown-preview dl, .markdown-preview[data-use-github-style] dl, .markdown-preview table, .markdown-preview[data-use-github-style] table, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-preview hr, .markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
-.markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
-.markdown-preview ul.no-list, .markdown-preview[data-use-github-style] ul.no-list, .markdown-preview ol.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
-.markdown-preview ul ul, .markdown-preview[data-use-github-style] ul ul, .markdown-preview ul ol, .markdown-preview[data-use-github-style] ul ol, .markdown-preview ol ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview ol ul, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-preview li > p, .markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
-.markdown-preview dl, .markdown-preview[data-use-github-style] dl { padding: 0px; }
-.markdown-preview dl dt, .markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
-.markdown-preview dl dd, .markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
-.markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
-.markdown-preview blockquote > :first-child, .markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
-.markdown-preview blockquote > :last-child, .markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
-.markdown-preview table, .markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: normal; }
-.markdown-preview table th, .markdown-preview[data-use-github-style] table th { font-weight: bold; }
-.markdown-preview table th, .markdown-preview[data-use-github-style] table th, .markdown-preview table td, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview table tr, .markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
-.markdown-preview table tr:nth-child(2n), .markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
-.markdown-preview img, .markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
-.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { max-width: none; }
-.markdown-preview span.frame, .markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
-.markdown-preview span.frame > span, .markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview span.frame span img, .markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
-.markdown-preview span.frame span span, .markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
-.markdown-preview span.align-center, .markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
-.markdown-preview span.align-center > span, .markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
-.markdown-preview span.align-center span img, .markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
-.markdown-preview span.align-right, .markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
-.markdown-preview span.align-right > span, .markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
-.markdown-preview span.align-right span img, .markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
-.markdown-preview span.float-left, .markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
-.markdown-preview span.float-left span, .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
-.markdown-preview span.float-right, .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
-.markdown-preview span.float-right > span, .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
-.markdown-preview code::before, .markdown-preview[data-use-github-style] code::before, .markdown-preview tt::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview code::after, .markdown-preview[data-use-github-style] code::after, .markdown-preview tt::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: ' '; }
-.markdown-preview code br, .markdown-preview[data-use-github-style] code br, .markdown-preview tt br, .markdown-preview[data-use-github-style] tt br { display: none; }
-.markdown-preview del code, .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
-.markdown-preview pre > code, .markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
-.markdown-preview .highlight, .markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
-.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
-.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
-.markdown-preview pre, .markdown-preview[data-use-github-style] pre { word-wrap: normal; }
-.markdown-preview pre code, .markdown-preview[data-use-github-style] pre code, .markdown-preview pre tt, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
-.markdown-preview pre code::before, .markdown-preview[data-use-github-style] pre code::before, .markdown-preview pre tt::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview pre code::after, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview pre tt::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
-.markdown-preview kbd, .markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
-.markdown-preview, .markdown-preview[data-use-github-style], .markdown-preview code, .markdown-preview[data-use-github-style] code { color: rgb(51, 51, 51); }
-.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { -webkit-font-smoothing: antialiased; cursor: text; }
-.markdown-preview > h1:first-child, .markdown-preview[data-use-github-style] > h1:first-child, .markdown-preview > h1:first-child + h2, .markdown-preview[data-use-github-style] > h1:first-child + h2, .markdown-preview > h2:first-child, .markdown-preview[data-use-github-style] > h2:first-child, .markdown-preview > h3:first-child, .markdown-preview[data-use-github-style] > h3:first-child, .markdown-preview > h4:first-child, .markdown-preview[data-use-github-style] > h4:first-child, .markdown-preview > h5:first-child, .markdown-preview[data-use-github-style] > h5:first-child, .markdown-preview > h6:first-child, .markdown-preview[data-use-github-style] > h6:first-child { margin-top: 0px; padding-top: 0px; }
-.markdown-preview a, .markdown-preview[data-use-github-style] a, .markdown-preview a code, .markdown-preview[data-use-github-style] a code { color: rgb(65, 131, 196); }
-.markdown-preview a:first-child h1, .markdown-preview[data-use-github-style] a:first-child h1, .markdown-preview a:first-child h2, .markdown-preview[data-use-github-style] a:first-child h2, .markdown-preview a:first-child h3, .markdown-preview[data-use-github-style] a:first-child h3, .markdown-preview a:first-child h4, .markdown-preview[data-use-github-style] a:first-child h4, .markdown-preview a:first-child h5, .markdown-preview[data-use-github-style] a:first-child h5, .markdown-preview a:first-child h6, .markdown-preview[data-use-github-style] a:first-child h6 { margin-top: 0px; padding-top: 0px; }
-.markdown-preview h1 + p, .markdown-preview[data-use-github-style] h1 + p, .markdown-preview h2 + p, .markdown-preview[data-use-github-style] h2 + p, .markdown-preview h3 + p, .markdown-preview[data-use-github-style] h3 + p, .markdown-preview h4 + p, .markdown-preview[data-use-github-style] h4 + p, .markdown-preview h5 + p, .markdown-preview[data-use-github-style] h5 + p, .markdown-preview h6 + p, .markdown-preview[data-use-github-style] h6 + p { margin-top: 0px; }
-.markdown-preview li p.first, .markdown-preview[data-use-github-style] li p.first { display: inline-block; }
-.markdown-preview ul, .markdown-preview[data-use-github-style] ul { list-style-type: disc; }
-.markdown-preview ol, .markdown-preview[data-use-github-style] ol { list-style-type: decimal; }
-.markdown-preview ul li > :first-child, .markdown-preview[data-use-github-style] ul li > :first-child, .markdown-preview ol li > :first-child, .markdown-preview[data-use-github-style] ol li > :first-child, .markdown-preview ul li ul:first-of-type, .markdown-preview[data-use-github-style] ul li ul:first-of-type, .markdown-preview ol li ul:first-of-type, .markdown-preview[data-use-github-style] ol li ul:first-of-type { margin-top: 0px; }
-.markdown-preview ol > li, .markdown-preview[data-use-github-style] ol > li { list-style-type: inherit; }
-.markdown-preview ul > li, .markdown-preview[data-use-github-style] ul > li { list-style-type: inherit; }
-.markdown-preview dl dt:first-child, .markdown-preview[data-use-github-style] dl dt:first-child { padding: 0px; }
-.markdown-preview dl dt > :first-child, .markdown-preview[data-use-github-style] dl dt > :first-child { margin-top: 0px; }
-.markdown-preview dl dt > :last-child, .markdown-preview[data-use-github-style] dl dt > :last-child { margin-bottom: 0px; }
-.markdown-preview dl dd > :first-child, .markdown-preview[data-use-github-style] dl dd > :first-child { margin-top: 0px; }
-.markdown-preview dl dd > :last-child, .markdown-preview[data-use-github-style] dl dd > :last-child { margin-bottom: 0px; }
-.markdown-preview blockquote p, .markdown-preview[data-use-github-style] blockquote p { font-size: 16px; line-height: 1.5; }
-.markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { padding: 16px; overflow: auto; font-size: 84%; line-height: 1.45; border-radius: 3px; background-color: rgb(40, 44, 52); }
-.markdown-preview pre, .markdown-preview[data-use-github-style] pre, .markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { margin-bottom: 16px; word-break: normal; }
-.markdown-preview pre, .markdown-preview[data-use-github-style] pre, .markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt, .markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { font-family: Consolas, 'Liberation Mono', Courier, monospace; }
-.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { height: 20px; width: 20px; }
-.markdown-preview del, .markdown-preview[data-use-github-style] del { text-decoration: none; position: relative; }
-.markdown-preview del::after, .markdown-preview[data-use-github-style] del::after { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black; content: ''; left: 0px; position: absolute; right: 0px; top: 50%; }
-.markdown-preview .flash, .markdown-preview[data-use-github-style] .flash { -webkit-animation: flash 1s ease-out 1; animation-duration: 1s; animation-timing-function: ease-out; animation-delay: initial; animation-direction: initial; animation-fill-mode: initial; -webkit-animation-play-state: initial; animation-play-state: initial; animation-name: flash; animation-iteration-count: 1; outline: rgba(255, 0, 0, 0) solid 1px; }
-.markdown-preview .flash:not(li), .markdown-preview[data-use-github-style] .flash:not(li) { display: block; }
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
-}
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="Madoko, version 0.9.15-beta" />
+  <meta name="viewport" content="initial-scale=1.0" />
+  <style type="text/css"  class="link">
+  /*# sourceURL=madoko.css */
+  /* ---------------------------------------------------
+     Various settings to display madoko elements correctly.
+     For example, lines in tables or a table of contents.
 
-.spell-check-misspelling .region {
-  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
-}
+     All rules use specific madoko classes and never just
+     a generic element. This means one can safely include
+     this CSS into any web page without affecting non-madoko
+     content.
+  ----------------------------------------------------*/
 
-pre.editor-colors,
-.host {
-  background-color: #282c34;
-  color: #abb2bf;
-}
-pre.editor-colors .line.cursor-line,
-.host .line.cursor-line {
-  background-color: rgba(153, 187, 255, 0.04);
-}
-pre.editor-colors .invisible,
-.host .invisible {
-  color: #abb2bf;
-}
-pre.editor-colors .cursor,
-.host .cursor {
-  border-left: 2px solid #528bff;
-}
-pre.editor-colors .selection .region,
-.host .selection .region {
-  background-color: #3e4451;
-}
-pre.editor-colors .bracket-matcher .region,
-.host .bracket-matcher .region {
-  border-bottom: 1px solid #528bff;
-  box-sizing: border-box;
-}
-pre.editor-colors .invisible-character,
-.host .invisible-character {
-  color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .indent-guide,
-.host .indent-guide {
-  color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .wrap-guide,
-.host .wrap-guide {
-  background-color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .gutter .line-number,
-.host .gutter .line-number {
-  color: #636d83;
-  -webkit-font-smoothing: antialiased;
-}
-pre.editor-colors .gutter .line-number.cursor-line,
-.host .gutter .line-number.cursor-line {
-  color: #abb2bf;
-  background-color: #2c313a;
-}
-pre.editor-colors .gutter .line-number.cursor-line-no-selection,
-.host .gutter .line-number.cursor-line-no-selection {
-  background-color: transparent;
-}
-pre.editor-colors .gutter .line-number .icon-right,
-.host .gutter .line-number .icon-right {
-  color: #abb2bf;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
-.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
-  bottom: -3px;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
-.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 25px;
-  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
-  pointer-events: none;
-}
-pre.editor-colors .gutter .line-number.folded,
-.host .gutter .line-number.folded,
-pre.editor-colors .gutter .line-number:after,
-.host .gutter .line-number:after,
-pre.editor-colors .fold-marker:after,
-.host .fold-marker:after {
-  color: #abb2bf;
-}
-.comment {
-  color: #5c6370;
-  font-style: italic;
-}
-.entity.name.type {
-  color: #e5c07b;
-}
-.entity.other.inherited-class {
-  color: #98c379;
-}
-.keyword {
-  color: #c678dd;
-}
-.keyword.control {
-  color: #c678dd;
-}
-.keyword.operator {
-  color: #abb2bf;
-}
-.keyword.other.special-method {
-  color: #61afef;
-}
-.keyword.other.unit {
-  color: #d19a66;
-}
-.storage {
-  color: #c678dd;
-}
-.storage.type.annotation,
-.storage.type.primitive {
-  color: #c678dd;
-}
-.storage.modifier.package,
-.storage.modifier.import {
-  color: #abb2bf;
-}
-.constant {
-  color: #d19a66;
-}
-.constant.variable {
-  color: #d19a66;
-}
-.constant.character.escape {
-  color: #56b6c2;
-}
-.constant.numeric {
-  color: #d19a66;
-}
-.constant.other.color {
-  color: #56b6c2;
-}
-.constant.other.symbol {
-  color: #56b6c2;
-}
-.variable {
-  color: #e06c75;
-}
-.variable.interpolation {
-  color: #be5046;
-}
-.variable.parameter {
-  color: #abb2bf;
-}
-.string {
-  color: #98c379;
-}
-.string.regexp {
-  color: #56b6c2;
-}
-.string.regexp .source.ruby.embedded {
-  color: #e5c07b;
-}
-.string.other.link {
-  color: #e06c75;
-}
-.punctuation.definition.comment {
-  color: #5c6370;
-}
-.punctuation.definition.method-parameters,
-.punctuation.definition.function-parameters,
-.punctuation.definition.parameters,
-.punctuation.definition.separator,
-.punctuation.definition.seperator,
-.punctuation.definition.array {
-  color: #abb2bf;
-}
-.punctuation.definition.heading,
-.punctuation.definition.identity {
-  color: #61afef;
-}
-.punctuation.definition.bold {
-  color: #e5c07b;
-  font-weight: bold;
-}
-.punctuation.definition.italic {
-  color: #c678dd;
-  font-style: italic;
-}
-.punctuation.section.embedded {
-  color: #be5046;
-}
-.punctuation.section.method,
-.punctuation.section.class,
-.punctuation.section.inner-class {
-  color: #abb2bf;
-}
-.support.class {
-  color: #e5c07b;
-}
-.support.type {
-  color: #56b6c2;
-}
-.support.function {
-  color: #56b6c2;
-}
-.support.function.any-method {
-  color: #61afef;
-}
-.entity.name.function {
-  color: #61afef;
-}
-.entity.name.class,
-.entity.name.type.class {
-  color: #e5c07b;
-}
-.entity.name.section {
-  color: #61afef;
-}
-.entity.name.tag {
-  color: #e06c75;
-}
-.entity.other.attribute-name {
-  color: #d19a66;
-}
-.entity.other.attribute-name.id {
-  color: #61afef;
-}
-.meta.class {
-  color: #e5c07b;
-}
-.meta.class.body {
-  color: #abb2bf;
-}
-.meta.method-call,
-.meta.method {
-  color: #abb2bf;
-}
-.meta.definition.variable {
-  color: #e06c75;
-}
-.meta.link {
-  color: #d19a66;
-}
-.meta.require {
-  color: #61afef;
-}
-.meta.selector {
-  color: #c678dd;
-}
-.meta.separator {
-  background-color: #373b41;
-  color: #abb2bf;
-}
-.meta.tag {
-  color: #abb2bf;
-}
-.none {
-  color: #abb2bf;
-}
-.invalid.deprecated {
-  color: #523d14 !important;
-  background-color: #e0c285 !important;
-}
-.invalid.illegal {
-  color: #ffffff !important;
-  background-color: #e05252 !important;
-}
-.markup.bold {
-  color: #d19a66;
-  font-weight: bold;
-}
-.markup.changed {
-  color: #c678dd;
-}
-.markup.deleted {
-  color: #e06c75;
-}
-.markup.italic {
-  color: #c678dd;
-  font-style: italic;
-}
-.markup.heading .punctuation.definition.heading {
-  color: #61afef;
-}
-.markup.inserted {
-  color: #98c379;
-}
-.markup.list {
-  color: #e06c75;
-}
-.markup.quote {
-  color: #d19a66;
-}
-.markup.raw {
-  color: #98c379;
-}
-.source.cs .keyword.operator {
-  color: #c678dd;
-}
-.source.css .property-name,
-.source.css .property-value {
-  color: #828997;
-}
-.source.css .property-name.support,
-.source.css .property-value.support {
-  color: #abb2bf;
-}
-.source.gfm .markup {
-  -webkit-font-smoothing: auto;
-}
-.source.gfm .markup.heading {
-  color: #e06c75;
-}
-.source.gfm .markup.link {
-  color: #c678dd;
-}
-.source.gfm .link .entity {
-  color: #61afef;
-}
-.source.ini .keyword.other.definition.ini {
-  color: #e06c75;
-}
-.source.java .storage.modifier.import {
-  color: #e5c07b;
-}
-.source.java .storage.type {
-  color: #e5c07b;
-}
-.source.java-properties .meta.key-pair {
-  color: #e06c75;
-}
-.source.java-properties .meta.key-pair > .punctuation {
-  color: #abb2bf;
-}
-.source.json .meta.structure.dictionary.json > .string.quoted.json {
-  color: #e06c75;
-}
-.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
-  color: #e06c75;
-}
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
-  color: #98c379;
-}
-.source.json .meta.structure.dictionary.json > .constant.language.json,
-.source.json .meta.structure.array.json > .constant.language.json {
-  color: #56b6c2;
-}
-.source.ruby .constant.other.symbol > .punctuation {
-  color: inherit;
-}
-.source.python .keyword.operator.logical.python {
-  color: #c678dd;
-}
-.source.python .variable.parameter {
-  color: #d19a66;
-}
-</style>
+  /* The table of  contents */
+  .madoko .toc>.tocblock .tocblock .tocblock {
+    margin-left: 2.5em;
+  }
+
+  .madoko .toc>.tocblock .tocblock {
+    margin-left: 1.7em;
+  }
+
+  .madoko .toc>.tocblock>.tocitem {
+    font-weight: bold;
+  }
+
+  .madoko .toc {
+    margin-top: 1em;
+  }
+
+  /* Paragraphs */
+  .madoko p.para-continue {
+    margin-bottom: 0pt;
+  }
+
+  .madoko .para-block+p {
+    margin-top: 0pt;
+  }
+
+  .madoko ul.para-block, .madoko ol.para-block {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+  }
+
+  .madoko ul.para-end, .madoko ol.para-end {
+    margin-bottom: 1em;
+  }
+
+  .madoko dl {
+    margin-left: 0em;
+  }
+
+  .madoko blockquote {
+    font-style: italic;
+  }
+
+  /* Local page links do not get an underline unless hovering */
+  .madoko a.localref {
+    text-decoration: none;
+  }
+  .madoko a.localref:hover {
+    text-decoration: underline;
+  }
+
+  /* Footnotes */
+  .madoko .footnotes {
+    font-size: smaller;
+    margin-top: 2em;
+  }
+
+  .madoko .footnotes hr {
+    width: 50%;
+    text-align: left;
+  }
+
+  .madoko .footnote {
+    margin-left: 1em;
+  }
+  .madoko .footnote-before {
+    margin-left: -1em;
+    width: 1em;
+    display: inline-block;
+  }
+
+  /* Abstract */
+  .madoko .abstract>p:first-child:before {
+    content: "Abstract. ";
+    font-weight: bold;
+  }
+
+  .madoko .abstract {
+    margin-left: 2.7em;
+    margin-right: 2.7em;
+    font-size: small;
+  }
+
+
+  /* Alignment */
+  .madoko .align-center, .madoko .align-center>p {
+    text-align: center !important;
+  }
+
+  .madoko .align-center pre {
+    text-align: left;
+  }
+
+  .madoko .align-center>* {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .madoko .align-left, .madoko .align-left>p {
+    text-align: left !important;
+  }
+
+  .madoko .align-left>* {
+    margin-left: 0pt !important;
+    margin-right: auto !important;
+  }
+
+  .madoko .align-right, .madoko .align-right>p {
+    text-align: right !important;
+  }
+
+  .madoko .align-right>* {
+    margin-left: auto !important;
+    margin-right: 0pt !important;
+  }
+
+  .madoko .align-center>table,
+  .madoko .align-left>table,
+  .madoko .align-right>table {
+    text-align: left !important;
+  }
+
+
+  /* Equations, Figure's etc. */
+  .madoko .equation-before {
+    float: right;
+  }
+
+
+  /* Bibliography */
+  .madoko .bibitem {
+    font-size: smaller;
+  }
+
+  .madoko .bib-numeric .bibitem {
+    margin-left: 3em;
+    text-indent: -3em;
+  }
+
+  .madoko .bibitem-before {
+    display: none;
+  }
+
+  .madoko .bib-numeric .bibitem-before {
+    display: inline-block;
+    width: 3em;
+    text-align: right;
+  }
+
+  .madoko .bibliography {
+  }
+
+  .madoko .bibsearch {
+    font-size: x-small;
+    text-decoration:none;
+    color: black;
+    font-family: "Segoe UI Symbol", Symbola;
+  }
+
+  /* General */
+  .madoko .block, .madoko .figure, .madoko .bibitem, .madoko .equation, .madoko div.math {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
+
+  .madoko .figure {
+    padding: 0.5em;
+    margin-left: 0pt;
+    margin-right: 0pt;
+  }
+
+  .madoko .hidden {
+    display: none;
+  }
+
+  .madoko .invisible {
+    visibility: hidden;
+  }
+
+  .madoko.preview .invisible {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  .madoko code.code, .madoko span.code {
+    white-space: pre-wrap;
+  }
+
+  .madoko hr, hr.madoko {
+    border: none;
+    border-bottom: black solid 1px;
+    margin-bottom: 0.5ex;
+  }
+
+  .madoko .framed>*:first-child {
+    margin-top: 0pt;
+  }
+  .madoko .framed>*:last-child {
+    margin-bottom: 0pt;
+  }
+
+
+  /* Title, authors */
+  /*
+  .madoko .title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1ex;
+  }
+
+  .madoko .subtitle {
+    font-size: x-large;
+    margin-bottom: 1ex;
+    margin-top: -1ex;
+  }
+
+  .madoko .titleblock>* {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .madoko .titleblock table {
+    width: 80%;
+  }
+
+  .madoko .authorblock .author {
+    font-size: large;
+  }
+
+  .madoko .titlenote {
+    margin-top: -0.5ex;
+    margin-bottom: 1.5ex;
+  }
+  */
+
+  /* Lists */
+
+  .madoko ul.list-star {
+    list-style-type: disc;
+  }
+
+  .madoko ul.list-dash {
+      list-style-type: none !important;
+  }
+
+  .madoko ul.list-dash > li:before {
+      content: "\2013";
+      position: absolute;
+      margin-left: -1em;
+  }
+
+  .madoko ul.list-plus {
+    list-style-type: square;
+  }
+
+  /* Tables */
+  .madoko table.madoko {
+    border-collapse: collapse;
+  }
+  .madoko td, .madoko th {
+    padding: 0ex 0.5ex;
+    margin: 0pt;
+    vertical-align: top;
+  }
+
+  .madoko .cell-border-left {
+    border-left: 1px solid black;
+  }
+  .madoko .cell-border-right {
+    border-right: 1px solid black;
+  }
+
+
+  .madoko thead>tr:first-child>.cell-line,
+  .madoko tbody:first-child>tr:first-child>.cell-line {
+    border-top: 1px solid black;
+    border-bottom: none;
+  }
+
+  .madoko .cell-line, .madoko .cell-double-line {
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+
+  .madoko .cell-double-line {
+    border-top: 1px solid black;
+    padding-top: 1.5px !important;
+  }
+
+
+  /* Math Pre */
+  .madoko .input-mathpre .MathJax_Display {
+    text-align: left !important;
+  }
+
+  .madoko div.input-mathpre {
+    text-align: left;
+    margin-top: 1.5ex;
+    margin-bottom: 1ex;
+  }
+
+  .madoko .math-rendering {
+    color: gray;
+  }
+
+  /* Math */
+  .madoko .mathdisplay {
+    text-align: center;
+  }
+
+
+  /*---------------------------------------------------------------------------
+    Default style for syntax highlighting
+  ---------------------------------------------------------------------------*/
+
+  .highlighted                        { color: black; }
+  .highlighted .token.identifier      { }
+  .highlighted .token.operators       { }
+  .highlighted .token.keyword         { color: blue }
+  .highlighted .token.string          { color: maroon }
+  .highlighted .token.string.escape   { color: gray }
+  .highlighted .token.comment         { color: darkgreen }
+  .highlighted .token.comment.doc     { font-style: normal }
+  .highlighted .token.constant        { color: purple; }
+  .highlighted .token.entity          {  }
+  .highlighted .token.tag             { color: blue }
+  .highlighted .token.info-token      { color: black }
+  .highlighted .token.warn-token      { color: black }
+  .highlighted .token.error-token     { color: darkred }
+  .highlighted .token.debug-token     { color: gray }
+  .highlighted .token.regexp          { color: maroon }
+  .highlighted .token.attribute.name  { color: navy }
+  .highlighted .token.attribute.value { color: maroon }
+  .highlighted .token.constructor     { color: purple }
+  .highlighted .token.namespace       { color: navy }
+  .highlighted .token.header          { color: navy }
+  .highlighted .token.type            { color: teal }
+  .highlighted .token.type.delimiter  { color: teal; }
+  .highlighted .token.predefined      { color: navy }
+  .highlighted .token.invalid         { border-bottom: red dotted 1px }
+  .highlighted .token.code            { color: maroon }
+  .highlighted .token.code.keyword    { color: navy }
+  .highlighted .token.typevar         { font-style: italic; }
+
+  .highlighted .token.delimiter   {  } /* .[curly,square,parenthesis,angle,array,bracket] */
+  .highlighted .token.number      {  }    /* .[hex,octal,binary,float] */
+  .highlighted .token.variable    {  }  /* .[name,value]  */
+  .highlighted .token.meta        { color: navy }      /* .[content] */
+
+  .highlighted .token.bold            { font-weight: bold; }
+  .highlighted .token.italic          { font-style: italic; }
+
+
+  /* Pretty formatting of code */
+  .madoko pre.pretty, .madoko code.pretty {
+    font-family: Cambria,Times,Georgia,serif;
+    font-size: 100%;
+  }
+
+  .madoko .pretty table {
+    border-collapse: collapse;
+  }
+  .madoko .pretty td {
+    padding: 0em;
+  }
+  .madoko .pretty td.empty {
+    min-width: 1.5ex;
+  }
+  .madoko .pretty td.expander {
+    width: 100em;
+  }
+  .madoko .pretty .token.identifier         { font-style: italic }
+  .madoko .pretty .token.constructor        { font-style: italic }
+
+
+  /* ---------------------------------------------------
+     Styling for full documents
+  ----------------------------------------------------*/
+  body.madoko {
+    font-family: Cambria,"Times New Roman","Liberation Serif","Times",serif;
+    -webkit-text-size-adjust: 100%;       /* so math displays well on mobile devices */
+    text-rendering: optimizeLegibility;
+  }
+
+  body.madoko {
+    max-width: 88ex; /* about 88 characters */
+    margin: 1em auto;
+    padding: 0em 2em;
+  }
+
+  body.preview.madoko {
+    padding: 0em 1em;
+  }
+
+  .madoko p,
+  .madoko li {
+    text-align: justify;
+  }
+
+  /* style headings nicer, especially h5 and h6 */
+  .madoko h1, .madoko h2, .madoko h3, .madoko h4 {
+    margin-top: 1.22em;
+    margin-bottom: 1ex;
+  }
+  .madoko h1+p, .madoko h2+p, .madoko h3+p, .madoko h4+p, .madoko h5+p  {
+    margin-top: 1ex;
+  }
+  .madoko h5, .madoko h6 {
+    margin-top: 1ex;
+    font-size: 1em;
+  }
+  .madoko h5 {
+    margin-bottom: 0.5ex;
+  }
+  .madoko h5 + p {
+    margin-top: 0.5ex;
+  }
+  .madoko h6 {
+    margin-bottom: 0pt;
+  }
+  .madoko h6 + p {
+    margin-top: 0pt;
+  }
+
+
+  /* Fix monospace display (see http://code.stephenmorley.org/html-and-css/fixing-browsers-broken-monospace-font-handling/) */
+  .madoko pre, .madoko code, .madoko kbd, .madoko samp, .madoko tt, .madoko .monospace, .madoko .token.indent, .madoko .reveal pre, .madoko .reveal code, .madoko .email {
+    font-family: Consolas,"Andale Mono WT","Andale Mono",Lucida Console,Monaco,monospace,monospace;
+    font-size: 0.85em;
+  }
+  .madoko pre code, .madoko .token.indent {
+    font-size: 0.95em;
+  }
+
+  .madoko pre code {
+    font-family: inherit !important;
+  }
+
+  /* Code prettify */
+  .madoko ol.linenums li {
+    background-color: white;
+    list-style-type: decimal;
+  }
+
+  /* Merging */
+  .madoko .remote {
+    background-color: #F0FFF0;
+  }
+  .madoko .remote + * {
+    margin-top: 0pt;
+  }
+
+  /* ---------------------------------------------------
+     Print settings
+  ----------------------------------------------------*/
+
+  @media print {
+    body.madoko {
+      font-size: 10pt;
+    }
+    @page {
+      margin: 1in 1.5in;
+    }
+  }
+
+  /* ---------------------------------------------------
+     Mobile device settings
+  ----------------------------------------------------*/
+
+  @media only screen and (max-device-width:1024px) {
+    body.madoko {
+      padding: 0em 1em;
+    }
+  }
+
+    </style>
+
   </head>
-  <body class='markdown-preview'><h2>Contents</h2>
-<ol>
-<li>Acknowledgement</li>
-<li>Abstract</li>
-<li>Background</li>
-<li>Gastric Acid and Hyper-acidity</li>
-<li>Antacids, <span class="math"><script type="math/tex">H_2</script></span> Antagonists and Proton Pump Inhibitors</li>
-<li>References</li>
-</ol>
-<h2>Acknowledgement</h2>
-<p>I, <code>name</code>, take this opportunity to thank our principal, in-charge, biology teacher and lab assistant who have provided us with proper guidance during the completion of our project.</p>
-<p>I also thank my parents and group members for their coordination and support</p>
-<h2>Abstract</h2>
-<p>Hyper-acidity is a recurring problem in daily life. In this project work, we briefly discuss the causes and cures of hyper-acidity and experimentally assess the efficiency of a few common natural antacids and commercial antacids.</p>
-<h2>Background</h2>
-<h3>Gastric Acid and Hyper-acidity</h3>
-<p>Gastric Acid is an important digestive fluid secreted in the stomach during the process of digestion. The Gastric acid mainly consists of hydrochloric acid, and a few other salts such as potassium chloride or sodium chloride.</p>
-<p>The acid plays a major role in hydrolyzing proteins and polysaccharides, activating several enzymes and protecting the stomach against pathogens.</p>
-<p>The typical pH of Gastric Acid is about 3 [1], and it’s usual concentration is about 0.8 M <span class="math"><script type="math/tex">^{[2]}</script></span>. An event of hyper-acidity is considerable in case the concentrations rise above 1 M <span class="math"><script type="math/tex">^{[3]}</script></span>.</p>
-<p>Common symptoms of hyper-acidity include heartburn, chest and stomach pains among others. It might also be a result of complications such as Peptic Ulcer or Gastric Cancer <span class="math"><script type="math/tex">^{[4]}</script></span>.</p>
-<h3>Antacids, H_2 Antagonists and Proton Pump Inhibitors</h3>
-<p>There are several natural and artificial substances available which could be potentially used to reduce conditions of hyper-acidity.</p>
-<h4>Antacids</h4>
-<p>The antacids are the simplest way to battle acidity. They are simply bases (or contain alkaline anions) which directly neutrilizes the gastric acid. Examples include Alka-Seltzer, Gelusil, etc.</p>
-<p>We shall discuss these in farther detail as they are the main focus of our work.</p>
-<h3><span class="math"><script type="math/tex">H_2</script></span> Antagonists</h3>
-<p>This is a class of drugs</p>
-<h2>References</h2>
-<ol>
-<li>Marieb EN, Hoehn K (2010). Human anatomy &amp; physiology. San Francisco: Benjamin Cummings. ISBN 0-8053-9591-1.</li>
-<li><a href="http://www.vivo.colostate.edu/hbooks/pathphys/digestion/stomach/parietal.html">http://www.vivo.colostate.edu/hbooks/pathphys/digestion/stomach/parietal.html</a></li>
-<li><a href="https://au.answers.yahoo.com/question/index?qid=20101020202744AAKRt2J">https://au.answers.yahoo.com/question/index?qid=20101020202744AAKRt2J</a></li>
-<li><a href="http://blog.ziffi.com/280/acidity-causes-treatment-prevention-mujtaba-hussain/">http://blog.ziffi.com/280/acidity-causes-treatment-prevention-mujtaba-hussain/</a></li>
-</ol></body>
+<body class="madoko">
+
+<div class="body madoko" style="line-adjust:0">
+<h2 id="sec-contents"    style="display:block;bookmark:1.&#8194;Contents;level:1"><span class="heading-before"><span class="heading-label">1</span>.&#8194;</span>Contents</h2>
+<ol class="ol compact" >
+<li class="li ol-li compact-li" >Acknowledgement
+</li>
+<li class="li ol-li compact-li" >Abstract
+</li>
+<li class="li ol-li compact-li" >Background
+
+<ol class="ol compact" >
+<li class="li ol-li compact-li" >Gastric Acid and Hyper-acidity
+</li>
+<li class="li ol-li compact-li" >Antacids, <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" alt="$H_2$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.159em;height:0.885em"> Antagonists and Proton Pump Inhibitors
+</li>
+<li class="li ol-li compact-li" >Commercial Antacids
+</li>
+<li class="li ol-li compact-li" >Natural Antacids
+</li></ol></li>
+<li class="li ol-li compact-li" >Methodology
+
+<ol class="ol compact" >
+<li class="li ol-li compact-li" >Requirements
+</li>
+<li class="li ol-li compact-li" >Procedure
+</li></ol></li>
+<li class="li ol-li compact-li" >References
+</li></ol>
+<h2 id="sec-acknowledgement"    style="display:block;bookmark:2.&#8194;Acknowledgement;level:1"><span class="heading-before"><span class="heading-label">2</span>.&#8194;</span>Acknowledgement</h2>
+<p class="noindent">I, <code class="code code1" >name</code>, take this opportunity to thank our principal, in-charge, biology teacher and lab assistant who have provided us with proper guidance during the completion of our project.
+</p>
+<p class="indent">I also thank my parents and group members for their coordination and support
+</p><h2 id="sec-abstract"    style="display:block;bookmark:3.&#8194;Abstract;level:1"><span class="heading-before"><span class="heading-label">3</span>.&#8194;</span>Abstract</h2>
+<p class="noindent">Hyper-acidity is a recurring problem in daily life. In this project work, we briefly discuss the causes and cures of hyper-acidity and experimentally assess the efficiency of a few common natural antacids and commercial antacids.
+</p>
+<p class="indent">The results show that the neutralizing power of natural antacids like ginger is comparable to that of commercial antacids.
+</p><h2 id="sec-background"    style="display:block;bookmark:4.&#8194;Background;level:1"><span class="heading-before"><span class="heading-label">4</span>.&#8194;</span>Background</h2><h3 id="sec-gastric-acid-and-hyper-acidity"    style="display:block;bookmark:4.1.&#8194;Gastric Acid and Hyper-acidity;level:2"><span class="heading-before"><span class="heading-label">4.1</span>.&#8194;</span>Gastric Acid and Hyper-acidity</h3>
+<p class="noindent">Gastric Acid is an important digestive fluid secreted in the stomach during the process of digestion. The Gastric acid mainly consists of hydrochloric acid, and a few other salts such as potassium chloride or sodium chloride.
+</p>
+<p class="indent">The acid plays a major role in hydrolyzing proteins and polysaccharides, activating several enzymes and protecting the stomach against pathogens.
+</p>
+<p class="indent">The typical pH of Gastric Acid is about 3 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7ElEQVRIx+2X0QnCQAyGvxQHOBzBEYobiCO4gh3BWeoKuoGOYN1AV7Ab/L7cwVEKtvVKXy4QKEcvX9IE/sYkYWYbIpP0JpH1xpYEoI4fJfGvA64v9ipK4gzc/PMzRZWSWjM7REcXgBjaSLqO+GwlsJZ0/wG+RncAKCb2qQQa4DTlfjEWZma1B062YiCsMTOFnvzb89XA93aS2iiJC1DOWmkMTGEFC1iGZmiGZmiGjtJT5wU8KMy2++OVUk9rr6cfL+AB5ICXmcn7LZmeSqqAKg9Shg4ZJBfGf85dJkzmYrvMvpNLkkr9LtON/fgCil3BNQNpNK8AAAAASUVORK5CYII=" alt="$^{[1]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7ElEQVRIx+2X0QnCQAyGvxQHOBzBEYobiCO4gh3BWeoKuoGOYN1AV7Ab/L7cwVEKtvVKXy4QKEcvX9IE/sYkYWYbIpP0JpH1xpYEoI4fJfGvA64v9ipK4gzc/PMzRZWSWjM7REcXgBjaSLqO+GwlsJZ0/wG+RncAKCb2qQQa4DTlfjEWZma1B062YiCsMTOFnvzb89XA93aS2iiJC1DOWmkMTGEFC1iGZmiGZmiGjtJT5wU8KMy2++OVUk9rr6cfL+AB5ICXmcn7LZmeSqqAKg9Shg4ZJBfGf85dJkzmYrvMvpNLkkr9LtON/fgCil3BNQNpNK8AAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">, and it&#39;s usual concentration is about 0.8 M <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjklEQVRIx+2X4U3DQAyFP0cdICobZAS6AtkgFRukG7RihLABXSFsQJkA6AZkA9RuYP640ikKOZdLyx8snXptI7/Yfva7E1VFRAoCU9WOiWzQt6oCaG/VqkrqAvIh37PgJbbAi+33U0SpqkcRWQY/tQAh6IeqPjOxhT5FhD5orDY58ADcAkWQkTdgq6pHr6/MCbgGXoEvoAFKYGN/N8DBnnGHzxh5gApoR8hSByRpIsRSoPaAHmKMNgKegIsYaOaoY25fNyOPPgX7VVJNjRz7Acd9C4dJHgOdOWq+cFBjHuw/J2Gvw8pgv78WaG2fO1XdXRxURFqrYwcsJxsOI4C19XEHlN6plCUAVsboHbA4Rw6zBMDWZm55ztz9FailtAVWqrrqC7aI3CX36QBgY+kcao0KuLGUp0dqgJsRQIB7k7r0SE22GuARqE5ibHZjLTM3rY0TyqEy64Fzzo/LI20xlSksQq+5WDyLZKEDZOpzU8Yf2D/oRS0kUn66d1zyLtPv06vfZcqRg1bqXabv+/0b9u2i72xYu58AAAAASUVORK5CYII=" alt="$^{[2]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjklEQVRIx+2X4U3DQAyFP0cdICobZAS6AtkgFRukG7RihLABXSFsQJkA6AZkA9RuYP640ikKOZdLyx8snXptI7/Yfva7E1VFRAoCU9WOiWzQt6oCaG/VqkrqAvIh37PgJbbAi+33U0SpqkcRWQY/tQAh6IeqPjOxhT5FhD5orDY58ADcAkWQkTdgq6pHr6/MCbgGXoEvoAFKYGN/N8DBnnGHzxh5gApoR8hSByRpIsRSoPaAHmKMNgKegIsYaOaoY25fNyOPPgX7VVJNjRz7Acd9C4dJHgOdOWq+cFBjHuw/J2Gvw8pgv78WaG2fO1XdXRxURFqrYwcsJxsOI4C19XEHlN6plCUAVsboHbA4Rw6zBMDWZm55ztz9FailtAVWqrrqC7aI3CX36QBgY+kcao0KuLGUp0dqgJsRQIB7k7r0SE22GuARqE5ibHZjLTM3rY0TyqEy64Fzzo/LI20xlSksQq+5WDyLZKEDZOpzU8Yf2D/oRS0kUn66d1zyLtPv06vfZcqRg1bqXabv+/0b9u2i72xYu58AAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">. An event of hyper-acidity is considerable in case the concentrations rise above 1 M <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABv0lEQVRIx+1XwW3CQBCciSjASTqADpx0ACnBoYJQAogKItMBtAAdQAcBdxA6CHYHk886Olk2d2DDKytZso9jZ29nd1ZHSSDZh2OSjujIan1LAgBVnokktH0ARHW+e04QKwBbe8+6OKWkgmTiLK0BwAU9SNp4UjUBkAAoU3a0AJdNlLg+Sf4twpdSA8kt0thZH9m6AKQB6RaAiRfUeMkBTBt+j0NrodzzEEDNyIDHJKOa9GUACvuchXAdAlryF1sAdXaq7D1rvYA9GwBje995Ass6AbWqfDlT0e7pP7tKr8/SMiO+lmsNSrJPcm1cLyQlof/tXQgUW6+6BTOTtLjEz8OFspZJGkgigEdTpzlJmVrhpumVVBiHZZEtSaZ3KSSr7pV9To2Cm1cvnOkEAPNWoCQjkluS35V+rJo7YVqf9N2kr+/R1aeGAK4CPTWksGru6bKQQvCNttw3KwEczEcOIPKNthBxGAI4kPypEwGSU+ekQ0lFF4KfkRwASEnmNmm+ADwb37FNoo8QwGAZtF5MbIi/WmEVxvM+FOwq7TXnu7ZN3ZU4/IN6OY3Ke8ct7zJVcbj7XebtjIC3vctUfe9/AU/Bx4Dq8MUhAAAAAElFTkSuQmCC" alt="$^{[3]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABv0lEQVRIx+1XwW3CQBCciSjASTqADpx0ACnBoYJQAogKItMBtAAdQAcBdxA6CHYHk886Olk2d2DDKytZso9jZ29nd1ZHSSDZh2OSjujIan1LAgBVnokktH0ARHW+e04QKwBbe8+6OKWkgmTiLK0BwAU9SNp4UjUBkAAoU3a0AJdNlLg+Sf4twpdSA8kt0thZH9m6AKQB6RaAiRfUeMkBTBt+j0NrodzzEEDNyIDHJKOa9GUACvuchXAdAlryF1sAdXaq7D1rvYA9GwBje995Ass6AbWqfDlT0e7pP7tKr8/SMiO+lmsNSrJPcm1cLyQlof/tXQgUW6+6BTOTtLjEz8OFspZJGkgigEdTpzlJmVrhpumVVBiHZZEtSaZ3KSSr7pV9To2Cm1cvnOkEAPNWoCQjkluS35V+rJo7YVqf9N2kr+/R1aeGAK4CPTWksGru6bKQQvCNttw3KwEczEcOIPKNthBxGAI4kPypEwGSU+ekQ0lFF4KfkRwASEnmNmm+ADwb37FNoo8QwGAZtF5MbIi/WmEVxvM+FOwq7TXnu7ZN3ZU4/IN6OY3Ke8ct7zJVcbj7XebtjIC3vctUfe9/AU/Bx4Dq8MUhAAAAAElFTkSuQmCC" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">.
+</p>
+<p class="indent">Common symptoms of hyper-acidity include heartburn, chest and stomach pains among others. It might also be a result of complications such as Peptic Ulcer or Gastric Cancer <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVRIx+2X4U3DMBCFvxdlgIgNYIWOQNgA2KBhg1aMUDZoGaFsQEcojNARIBs8/jgoiiqS1G6QECed5MTxPd9d7tkn20i6oiW2DySSo7ZtA7ijlW1iFSiO2c5bm9gAr2H8nsJL27Wku9arbTNBjHdAGdYXA741UGWR+Sq+dw8XQ9dlkRHchryNkizCy2qMd9GgoQyWwHwy0BDWB6CeBFTSCtjZ3p2amnwkYAmUtmcxf18+sjzWwE0saYwJ7zOwSsHL2UAvbwPjbFLQYz6wPFbAjESSDSyPpe16ElBJC2Bv+4WE0hfeR6CQdD/A1pukZjz/aaN9oJc98/ehjACugUNzjp7sad9iSR+tx3po3jN+QWKOtqLDTuU5CX8hycAnULWm1pIctEwKavvJtnp093dy+g86lgaLpu84Zy/TveFP3st0ryBJPA29TNf2/gsaVT2Dpbj24AAAAABJRU5ErkJggg==" alt="$^{[4]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVRIx+2X4U3DMBCFvxdlgIgNYIWOQNgA2KBhg1aMUDZoGaFsQEcojNARIBs8/jgoiiqS1G6QECed5MTxPd9d7tkn20i6oiW2DySSo7ZtA7ijlW1iFSiO2c5bm9gAr2H8nsJL27Wku9arbTNBjHdAGdYXA741UGWR+Sq+dw8XQ9dlkRHchryNkizCy2qMd9GgoQyWwHwy0BDWB6CeBFTSCtjZ3p2amnwkYAmUtmcxf18+sjzWwE0saYwJ7zOwSsHL2UAvbwPjbFLQYz6wPFbAjESSDSyPpe16ElBJC2Bv+4WE0hfeR6CQdD/A1pukZjz/aaN9oJc98/ehjACugUNzjp7sad9iSR+tx3po3jN+QWKOtqLDTuU5CX8hycAnULWm1pIctEwKavvJtnp093dy+g86lgaLpu84Zy/TveFP3st0ryBJPA29TNf2/gsaVT2Dpbj24AAAAABJRU5ErkJggg==" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">.
+</p><h3 id="sec-antacids-h_2-antagonists-and-proton-pump-inhibitors"    style="display:block;bookmark:4.2.&#8194;Antacids, $H_2$ Antagonists and Proton Pump Inhibitors;level:2"><span class="heading-before"><span class="heading-label">4.2</span>.&#8194;</span>Antacids, <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" alt="$H_2$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.159em;height:0.885em"> Antagonists and Proton Pump Inhibitors</h3>
+<p class="noindent">There are several natural and artificial substances available which could be potentially used to reduce conditions of hyper-acidity.
+</p><h4 id="sec-antacids"    style="display:block;bookmark:4.2.1.&#8194;Antacids;level:3"><span class="heading-before"><span class="heading-label">4.2.1</span>.&#8194;</span>Antacids</h4>
+<p class="noindent">The antacids are the simplest way to battle acidity. They are simply bases (or contain alkaline anions) which directly neutrilizes the gastric acid. Examples include Alka-Seltzer, Gelusil, etc.
+</p>
+<p class="indent">We shall discuss these in farther detail as they are the main focus of our work.
+</p><h4 id="sec-h_2-antagonists"    style="display:block;bookmark:4.2.2.&#8194;$H_2$ Antagonists;level:3"><span class="heading-before"><span class="heading-label">4.2.2</span>.&#8194;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" alt="$H_2$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.159em;height:0.885em"> Antagonists</h4>
+<p class="noindent">This is a class of drugs that block the action of histamine on parietal cells (the <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAcCAYAAAAZSVOEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNUlEQVRo3s1a0XHbMAx99GUAX0bgCEo3iLKBOkKVDZzLBD2PIHeC1iPI2aDyBvIIUTZAfyAfgqNsgWQd4U4XyxEo4OEBBEmDiDB1AdgAIMNVKv3KqF9fsmfOBWANoAawB9AB6Hnsge+3ANYTutspGwCUPGarxm3mGFXwFQJky4MXAPyEvhf6vdJvrukbwKvYwXHsnsff8P8q/jw+sw0ASACKK+NrH2qroYNQbiMc7aSTqawTDOlUYIoZxOgB7BWANPOdMljeYqxPTT3N4gwA7mVQLWzmtB9UANqZuucSQUSwGFwrELzR4eJS/TSO5VVabRJYbCIGgz8+v7eCKKM+RBj8aZJKAFAHo0pkc28hhiJTbQVx0BEwGivrSJcJwDpjSRgiyOSJCCvMEOecZxqP0sIupfh8sCqzDW/iqx0R7ZAuJ6NNox8nIjoBmAeiAsAMgnOuUF/FBGEvAvlBRM/IIz3//W0k0xmDuSA+ic8fYwQiWQgisgah5lQe5Qfyy8HoRysdWnQ9VLNh1KQ2Y6LoIvw4r3pWN6qH3xLq4au63+WkHxHtiOghoh5+WNJZ18O/EfUwJQi1uv+JLxBV1z8R4c5YDwGgc86lRP5gMLxUAThIBtxYSjXJmUDUrcmL8eW/xKRwNOo+ZZjVc8nTFBHujPVwT0THXGkwQ7y6P34hiOWUDSsDC7+iP/QprVHGenhxobAypNPN+8MAE3MCs3bOVRFlpU1h4iGljkSm4rsMYmYc60DNvYpDiAh3S14v87r2f7HxFcDjHMaKiTHow2rh62Wps86YyjU3zEcjEdqpvm2x+4eB3fQywzLP8zLWz3y+Ee8v9JLx4n7iEvYPA8FsMpwE9pZ9SLlpG9jb7CZBXNJ5SsCW4lYAKj/aAEO3l0BczHlK4CxkiLCnYr1Nwg5SE8hUfwnENrEebnOcpwSAHASQ1Uyd8aw4lsGDziYOyrlEOSKSM+k9gO+BnZPv3Ke9620g0Q6NLZFnEKU8c7sS1Lc0yDx2LXrHPwzSie89gAcG8B7AS8oxAs/kDYAjET0wVm8AHuXsrlPv2rW5UrOuXU3mn4r0KtU7drrMuHFb8bgDv+/T2P8Al0aY77SIGdQAAAAASUVORK5CYII=" alt="$HCl$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAcCAYAAAAZSVOEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNUlEQVRo3s1a0XHbMAx99GUAX0bgCEo3iLKBOkKVDZzLBD2PIHeC1iPI2aDyBvIIUTZAfyAfgqNsgWQd4U4XyxEo4OEBBEmDiDB1AdgAIMNVKv3KqF9fsmfOBWANoAawB9AB6Hnsge+3ANYTutspGwCUPGarxm3mGFXwFQJky4MXAPyEvhf6vdJvrukbwKvYwXHsnsff8P8q/jw+sw0ASACKK+NrH2qroYNQbiMc7aSTqawTDOlUYIoZxOgB7BWANPOdMljeYqxPTT3N4gwA7mVQLWzmtB9UANqZuucSQUSwGFwrELzR4eJS/TSO5VVabRJYbCIGgz8+v7eCKKM+RBj8aZJKAFAHo0pkc28hhiJTbQVx0BEwGivrSJcJwDpjSRgiyOSJCCvMEOecZxqP0sIupfh8sCqzDW/iqx0R7ZAuJ6NNox8nIjoBmAeiAsAMgnOuUF/FBGEvAvlBRM/IIz3//W0k0xmDuSA+ic8fYwQiWQgisgah5lQe5Qfyy8HoRysdWnQ9VLNh1KQ2Y6LoIvw4r3pWN6qH3xLq4au63+WkHxHtiOghoh5+WNJZ18O/EfUwJQi1uv+JLxBV1z8R4c5YDwGgc86lRP5gMLxUAThIBtxYSjXJmUDUrcmL8eW/xKRwNOo+ZZjVc8nTFBHujPVwT0THXGkwQ7y6P34hiOWUDSsDC7+iP/QprVHGenhxobAypNPN+8MAE3MCs3bOVRFlpU1h4iGljkSm4rsMYmYc60DNvYpDiAh3S14v87r2f7HxFcDjHMaKiTHow2rh62Wps86YyjU3zEcjEdqpvm2x+4eB3fQywzLP8zLWz3y+Ee8v9JLx4n7iEvYPA8FsMpwE9pZ9SLlpG9jb7CZBXNJ5SsCW4lYAKj/aAEO3l0BczHlK4CxkiLCnYr1Nwg5SE8hUfwnENrEebnOcpwSAHASQ1Uyd8aw4lsGDziYOyrlEOSKSM+k9gO+BnZPv3Ke9620g0Q6NLZFnEKU8c7sS1Lc0yDx2LXrHPwzSie89gAcG8B7AS8oxAs/kDYAjET0wVm8AHuXsrlPv2rW5UrOuXU3mn4r0KtU7drrMuHFb8bgDv+/T2P8Al0aY77SIGdQAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.728em"> secreting cells) of the stomach. Thus, this drug deals with hyper-acidity by supressing the secretion itself. Two of the common drugs from this category are Ranitidine and Cimetidine.
+</p><h4 id="sec-proton-pump-inhibitors"    style="display:block;bookmark:4.2.3.&#8194;Proton Pump Inhibitors;level:3"><span class="heading-before"><span class="heading-label">4.2.3</span>.&#8194;</span>Proton Pump Inhibitors</h4>
+<p class="noindent">The Proton Pump Inhibitors are the most potent acid secretion inhibitors. They achieve a similar effect as the <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" alt="$H_2$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAiCAYAAAD23jEpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVRYw81Z0XHCMAx9zjFAChtkBOgI6QZhhXSD9DpC2AA6At0gbNDCBmGDlmyg/iit8JFENqFYdz7CxVIiyc96ckBE6BoACgDkMFJLP3PUz/vep2sYflinGGPmfJkA2Fq3VwAqAN8AGiI6XtBPAMSsX/JvKxu22amvEhePAZxE1CrXiAHYC/3aJ+qXRqR1VkS0la1HzObi+h0jSeQwN7X+71weJJZlK9U9nHgS1z7rN7WW8e7emfB5ARmEA0aUyBMPPkvh2iBcnYlg8eDiRLB48M1EUHhQOTESHh5vhQdtJmw8fHrgIb4VHgCouNOWidwoQkRmbCcmHnh4cXzGm6Abo+Nh0IlLfImIDh7LyRkPxpgYwCsHIBFB+ACwIaJGxWIB5BbfTxxZ67yv3xjoY/b8m7ITGZPO1lbxO3/AmFQ6eVDvs6ZKqZNxxjWBLTVOyP5h6+FEJfT3jj1LrrSb9BlLrm0dLf1SMT/WNE1W21tGIfElBmu7cax7pkraE09C40tEtFBMm4rrOnKoDyHxpXPboeDB88Ci6jsoCLZ/YBoUMy6WncXO2sJ86kPpWh+UdtsaUcvCa4hIRm7K3uVWAJYAGj7kOp6V/D96Yh+SSXnmyF3UV2agrdg7AEvbxtzxqLEYwM/QWHtkIOvTxZiAu8UQSyjv2IDSCQIWY0zOS3PRwZ4zALPQM1D3MWdmutlgZ3enDBScgRWAL+v2jDeQKWdiEWIGnL6JqL5P/HMGEl5CWmmI6OEH39Xy4AhLN0wAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.159em;height:0.885em"> antagonists, but in a different way, which is by blocking the gastric &#8220;prton pumps&#8221; of the gastric parietal cells. An example is omepazole.
+</p><h3 id="sec-commercial-antacids"    style="display:block;bookmark:4.3.&#8194;Commercial Antacids;level:2"><span class="heading-before"><span class="heading-label">4.3</span>.&#8194;</span>Commercial Antacids</h3><h4 id="sec-digene"    style="display:block;bookmark:4.3.1.&#8194;Digene;level:3"><span class="heading-before"><span class="heading-label">4.3.1</span>.&#8194;</span>Digene</h4>
+<p class="noindent">Digene is one of the most popular over the counter antacids in India. It was manufactured by Abbott India Limited.
+</p>
+<p class="indent">Each tablet contains Dried Aluminum Hydroxide Gel, Magnesium Aluminum Silicate Hydrate, Magnesium Hydroxide, Simethicone and a few artificial coloring and flavoring agents for aesthetics.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjUlEQVRIx+2X3VECMRSFv+NQAIMVAB2sJch2IGMH2AGU4EgHaAdiB1KC0gGUIHRwfDBxMojsruyiD2Ymk2z2zj25uT8nkW0k9Uia7TU1tb26bQN4p49sc2wH2vt0t5JN3APPYb6sw0rbW0nDZGkef1BkHZABgwKrroBegcwXSw+1a2AsCWABRJ/3gE7Y1BbollHW+sGpDfasLYFL29u6QVPrItAamNleVNl1FdAn25M6AuyMX2h/H1RSJmkuaRX6Jnz3mgK9Ah6AW9t92/0kRVaSRk2Arm1f2F6mFcf2MEaxpKw2UNsT2/kBkVkYH04ZSDFPM0mDU4GmlSg7GlTSSNKsIELfknn/qIokqZ34qwMMvxHtNJUyh24T7WT+epSlgYRjUZ+WZJ7HOiy9A/ICmZs4lqG3sxI5eh/8O/vG7/NAd9MoWwu12c4ljSVtwvGtgHNgFCI3r8KppQMp+LT7ebn6AL4MdbgxEif4a5FUoH8S/3ugqU/bsb42+ZbZveGf/C2TV6izVd8yu7pf3gGBsVQyJwJ8CwAAAABJRU5ErkJggg==" alt="$^{[5]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjUlEQVRIx+2X3VECMRSFv+NQAIMVAB2sJch2IGMH2AGU4EgHaAdiB1KC0gGUIHRwfDBxMojsruyiD2Ymk2z2zj25uT8nkW0k9Uia7TU1tb26bQN4p49sc2wH2vt0t5JN3APPYb6sw0rbW0nDZGkef1BkHZABgwKrroBegcwXSw+1a2AsCWABRJ/3gE7Y1BbollHW+sGpDfasLYFL29u6QVPrItAamNleVNl1FdAn25M6AuyMX2h/H1RSJmkuaRX6Jnz3mgK9Ah6AW9t92/0kRVaSRk2Arm1f2F6mFcf2MEaxpKw2UNsT2/kBkVkYH04ZSDFPM0mDU4GmlSg7GlTSSNKsIELfknn/qIokqZ34qwMMvxHtNJUyh24T7WT+epSlgYRjUZ+WZJ7HOiy9A/ICmZs4lqG3sxI5eh/8O/vG7/NAd9MoWwu12c4ljSVtwvGtgHNgFCI3r8KppQMp+LT7ebn6AL4MdbgxEif4a5FUoH8S/3ugqU/bsb42+ZbZveGf/C2TV6izVd8yu7pf3gGBsVQyJwJ8CwAAAABJRU5ErkJggg==" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">
+</p>
+<p class="indent">The retail price of Digene tablets at the time of the project had been <code class="code code1" >&lt;cost&gt; per &lt;tablet&gt;</code>.
+</p><h4 id="sec-gelusil"    style="display:block;bookmark:4.3.2.&#8194;Gelusil;level:3"><span class="heading-before"><span class="heading-label">4.3.2</span>.&#8194;</span>Gelusil</h4>
+<p class="noindent">Gelusil is also another popular commercial antacid. It has been in circulation since 1939.
+</p>
+<p class="indent">This product also contains Aluminum Hydroxide Gel, Magnesium Aluminum Silicate Hydrate, Magnesium Hydroxide and Simethicone.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVRIx+WX720aQRDFf89yASengkAHxB0El2ClA9wBKBVYuAPcgUU6gBJiOgBXYKCD5w+Zs1YXzrdoL8mHjLTa0e3evJ3/u7KNpAEJ2d7RE52UbRvAjTGxTekAqlOyL5NDPAKr4Dd9aGn7KOk2+bSsFzhXO2ASB9zGWAHjjP8MTM4CBcbAIUBGyfcR8AxMewUN7QwsWg7jX4brBr3IjMAxsADWtu9ObLk5x9eXmfuWMc9a1u8jUle9gEqahMCd7U1blAJ3uZrmmHfWZxp1gkqqgLqi7GrNJT1L2ko6SFo2q06pptcJ/yppCQyBr7aHwGdgD2wlTfsKpCrhv0X0zpq+lHQFzCUdbT+WanqV8IMUsEGLeg6XFAdSTesPamy69r0UdJ/wXe3uGPO4FDQFes20yKAItFEMPmWC7vvw6TpTgyq3iOSALrp81SgOT8Wgtn+EbytJo5Ztdd3dxP5OoZ39NEx7iFtC1dJLf1sr6qdxO/wSafEiaS5pKmkV7ezB9jAqVG/99B04THwdgTMHbnPBzgZtpFFRm7vgH9D/A5r6tKqT/E++ZZp5+tffMjcfdJfSt0xT9s83iuP61NHbGc8AAAAASUVORK5CYII=" alt="$^{[6]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVRIx+WX720aQRDFf89yASengkAHxB0El2ClA9wBKBVYuAPcgUU6gBJiOgBXYKCD5w+Zs1YXzrdoL8mHjLTa0e3evJ3/u7KNpAEJ2d7RE52UbRvAjTGxTekAqlOyL5NDPAKr4Dd9aGn7KOk2+bSsFzhXO2ASB9zGWAHjjP8MTM4CBcbAIUBGyfcR8AxMewUN7QwsWg7jX4brBr3IjMAxsADWtu9ObLk5x9eXmfuWMc9a1u8jUle9gEqahMCd7U1blAJ3uZrmmHfWZxp1gkqqgLqi7GrNJT1L2ko6SFo2q06pptcJ/yppCQyBr7aHwGdgD2wlTfsKpCrhv0X0zpq+lHQFzCUdbT+WanqV8IMUsEGLeg6XFAdSTesPamy69r0UdJ/wXe3uGPO4FDQFes20yKAItFEMPmWC7vvw6TpTgyq3iOSALrp81SgOT8Wgtn+EbytJo5Ztdd3dxP5OoZ39NEx7iFtC1dJLf1sr6qdxO/wSafEiaS5pKmkV7ezB9jAqVG/99B04THwdgTMHbnPBzgZtpFFRm7vgH9D/A5r6tKqT/E++ZZp5+tffMjcfdJfSt0xT9s83iuP61NHbGc8AAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">
+</p>
+<p class="indent">The retail price of Gelusil tablets at the time of the project had been <code class="code code1" >&lt;cost&gt; per &lt;tablet&gt;</code>.
+</p><h3 id="sec-natural-antacids"    style="display:block;bookmark:4.4.&#8194;Natural Antacids;level:2"><span class="heading-before"><span class="heading-label">4.4</span>.&#8194;</span>Natural Antacids</h3><h4 id="sec-neem-bark"    style="display:block;bookmark:4.4.1.&#8194;Neem Bark;level:3"><span class="heading-before"><span class="heading-label">4.4.1</span>.&#8194;</span>Neem Bark</h4>
+<p class="noindent">Neem (<em class="em20" >Azadirachta indica</em>) has been known for its medicinal properties for over two millenia in India. The Indian Ayurveda was the first to bring the  anthelmintic, antifungal, antibacterial, and antiviral properties of Neem into spotlight.
+</p>
+<p class="indent">Traditional Indian knowledge, along with some supporting studies tell us that Neem bark extracts have antacid like effects.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABWUlEQVRIx9WX4U3DMBCFv4syQCQ2CBsU2CDdgI5A2KAZAZUN6Ai0G1A2KN2AbgBkg8cfV4qi0jhx6gpLlp34fC/v7nzOmSTMLKfRJO0ZqR3VLQlArV5KIrQD2THdaeMjlsCbm+/GYCmpNrNZ49XqsEAXO7c+B3IgC2AuoEw8fDJx0wXwCfyYmTr6xymdiYeV8gGWrU4tph4K7oAaeHXPNfB1RO7KuaCStAkFzYEnSc8dbngBNl1yvuadAOsOwBIogJmP7X2YVqeShQu0BXAjqfYBTTzO2rpD5B146JPFksAUt3B+XPfZlwbm1Dlw3XdvCNOVY7mPAmpmhYvq1ZD9Q5k+unEbBdTMMuDeRfYuFtOikQ6JBToNvWeHgN668TsmaH4J82aXMO++NfZu6cBAKhqX+vlBXdpbxjYvl/Dp/wRt+jQ71B3nrGXaf/jRa5npH2dxjFqmrXv7C2PKKvia3LWpAAAAAElFTkSuQmCC" alt="$^{[7]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABWUlEQVRIx9WX4U3DMBCFv4syQCQ2CBsU2CDdgI5A2KAZAZUN6Ai0G1A2KN2AbgBkg8cfV4qi0jhx6gpLlp34fC/v7nzOmSTMLKfRJO0ZqR3VLQlArV5KIrQD2THdaeMjlsCbm+/GYCmpNrNZ49XqsEAXO7c+B3IgC2AuoEw8fDJx0wXwCfyYmTr6xymdiYeV8gGWrU4tph4K7oAaeHXPNfB1RO7KuaCStAkFzYEnSc8dbngBNl1yvuadAOsOwBIogJmP7X2YVqeShQu0BXAjqfYBTTzO2rpD5B146JPFksAUt3B+XPfZlwbm1Dlw3XdvCNOVY7mPAmpmhYvq1ZD9Q5k+unEbBdTMMuDeRfYuFtOikQ6JBToNvWeHgN668TsmaH4J82aXMO++NfZu6cBAKhqX+vlBXdpbxjYvl/Dp/wRt+jQ71B3nrGXaf/jRa5npH2dxjFqmrXv7C2PKKvia3LWpAAAAAElFTkSuQmCC" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">
+</p><h4 id="sec-mint-leaves"    style="display:block;bookmark:4.4.2.&#8194;Mint Leaves;level:3"><span class="heading-before"><span class="heading-label">4.4.2</span>.&#8194;</span>Mint Leaves</h4>
+<p class="noindent">Mint (<em class="em12" >Mentha sp.</em>), commonly known as Pudina, is an important herb of medicinal value. The mint genus constitutes a number of fast-growing species thriving in lakes, rivers or moist patches of land. It is most well known for its application in food and beverages.
+</p>
+<p class="indent">Mint leaves could be used as antacids or otherwise cure irritable bowel syndrome, stomach ache or chest pains due to the presence of menthol. Some recent studies support this claim.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABx0lEQVRIx+WX4W2DMBCFv4syAO0GIRuk7QawQbIC2aBSR6AbJCskG8AITTeATlCVDa5/DslCIbYL7Z9askAY3bPvPT+fRVURkRSnqWrLTO1qbFUF0EEvVJWpHUiuxV46kzgClb2/z7FKVe1EZOd8OgG4oBdVPXtStQH2wKOtogNq4DBGiRtTRABYRHBzAl4M4EFV10C/ikZEnmNSgI9H4ACUN8Yzi7H1cKxA4QUFUhtPPAEroAkBDUlvZs97z3+tTdDbQkCTXnkiktz4LzXgWUBre26ADxHZXhHZ1jJSzimky2CDV0BqY1v7dgowizAhOc7SXHGXBvgKdbAYIaGqne3L1xEe6xinijGHzFLZWcfhOsocFoGApfFYAyvrw1WXInKYRUhAYePliHFUA56zSUJyjiaf0xSusqcKqXejgydbR8f806mc3jsW56PpPBDYj0F7sKdAYSYh22fhmX1twIXHd3sr7EKsMGTL5H1lYZXDGOAJ2IUUdcsArloRWdkKLiJSWw31CaxNbC2wDq0iY2xwD9wZeOMUWrmq5jFl6zLGM1W1i/XZSd47Z/s/oC6nSX/v+M27zPCU+fO7TD5if3PcZYax374BLDdyo7zSpvYAAAAASUVORK5CYII=" alt="$^{[8]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABx0lEQVRIx+WX4W2DMBCFv4syAO0GIRuk7QawQbIC2aBSR6AbJCskG8AITTeATlCVDa5/DslCIbYL7Z9askAY3bPvPT+fRVURkRSnqWrLTO1qbFUF0EEvVJWpHUiuxV46kzgClb2/z7FKVe1EZOd8OgG4oBdVPXtStQH2wKOtogNq4DBGiRtTRABYRHBzAl4M4EFV10C/ikZEnmNSgI9H4ACUN8Yzi7H1cKxA4QUFUhtPPAEroAkBDUlvZs97z3+tTdDbQkCTXnkiktz4LzXgWUBre26ADxHZXhHZ1jJSzimky2CDV0BqY1v7dgowizAhOc7SXHGXBvgKdbAYIaGqne3L1xEe6xinijGHzFLZWcfhOsocFoGApfFYAyvrw1WXInKYRUhAYePliHFUA56zSUJyjiaf0xSusqcKqXejgydbR8f806mc3jsW56PpPBDYj0F7sKdAYSYh22fhmX1twIXHd3sr7EKsMGTL5H1lYZXDGOAJ2IUUdcsArloRWdkKLiJSWw31CaxNbC2wDq0iY2xwD9wZeOMUWrmq5jFl6zLGM1W1i/XZSd47Z/s/oC6nSX/v+M27zPCU+fO7TD5if3PcZYax374BLDdyo7zSpvYAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">
+</p><h4 id="sec-ginger"    style="display:block;bookmark:4.4.3.&#8194;Ginger;level:3"><span class="heading-before"><span class="heading-label">4.4.3</span>.&#8194;</span>Ginger</h4>
+<p class="noindent">Ginger (<em class="em21" >Zingiber officinale</em>), or its rhizome, is widely used as a spice as well as for medicinal purposes. Ginger is closely related with turmeric and cardamom, all of which are in the same genus.
+</p>
+<p class="indent">Due to the presence of bioactive compounds such as Zingerone, Shogaol or Gingerol, ginger behaves as an efficient antacid.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABtElEQVRIx+2X4W0iMRSEv4koYHUlQAeQ64B0AHcVHOkg1JB0EDo4QQchFeSgAyghoYPJn7eStVqCN+vk11myjMF4dubNe17LNpKGJM32kUKtdW/bAG70hW36dqBq23uQPMQKeIrP+xIsbZ8kzZOv1vUP5LIDpvHHHXCI8a4DcwOLqw6xWYcSL7YntkfAH+BW0lszdpckuMg02LWuAYbAW/SqCFNJd8AMONletTz0MfxQAfc5RHPkvU+Mdq79jXEhqeoFKmmaTA8fLE3z+ldfpsPc1EimkxLydm3XfUGPmemUxrFfTG1vk+kok92PEvIuY5x+sGbeRf+rDJM8hMxjSeMzp8g1cMoNSa6RJsAWeJY0SwBnURpTpq9FQG2fbN8ktfYgaQf8BCZRlWoDPV3ab9DxqNoAmwsH9fa78rQ22d72vjeopLGknaTHDIcvSxX838D4XDGXtIhy+dDI616gLzWLRo2t3fsIrGwvc2MxyDGPpFW4dhSnzShycwjMw2AUAw3g25B2GkA7YJ0r56dTJqTdlLD6Vxxt/0FbY1rV5ewr7zLN995vv8vcfOY1JfMu09z73zurioiZAZgazAAAAABJRU5ErkJggg==" alt="$^{[9]}$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABtElEQVRIx+2X4W0iMRSEv4koYHUlQAeQ64B0AHcVHOkg1JB0EDo4QQchFeSgAyghoYPJn7eStVqCN+vk11myjMF4dubNe17LNpKGJM32kUKtdW/bAG70hW36dqBq23uQPMQKeIrP+xIsbZ8kzZOv1vUP5LIDpvHHHXCI8a4DcwOLqw6xWYcSL7YntkfAH+BW0lszdpckuMg02LWuAYbAW/SqCFNJd8AMONletTz0MfxQAfc5RHPkvU+Mdq79jXEhqeoFKmmaTA8fLE3z+ldfpsPc1EimkxLydm3XfUGPmemUxrFfTG1vk+kok92PEvIuY5x+sGbeRf+rDJM8hMxjSeMzp8g1cMoNSa6RJsAWeJY0SwBnURpTpq9FQG2fbN8ktfYgaQf8BCZRlWoDPV3ab9DxqNoAmwsH9fa78rQ22d72vjeopLGknaTHDIcvSxX838D4XDGXtIhy+dDI616gLzWLRo2t3fsIrGwvc2MxyDGPpFW4dhSnzShycwjMw2AUAw3g25B2GkA7YJ0r56dTJqTdlLD6Vxxt/0FbY1rV5ewr7zLN995vv8vcfOY1JfMu09z73zurioiZAZgazAAAAABJRU5ErkJggg==" class="math-inline math" style="vertical-align:-0.000em;height:0.807em">
+</p><h2 id="sec-methodology"    style="display:block;bookmark:5.&#8194;Methodology;level:1"><span class="heading-before"><span class="heading-label">5</span>.&#8194;</span>Methodology</h2><h3 id="sec-requirements"    style="display:block;bookmark:5.1.&#8194;Requirements;level:2"><span class="heading-before"><span class="heading-label">5.1</span>.&#8194;</span>Requirements</h3><h4 id="sec-chemicals"    style="display:block;bookmark:5.1.1.&#8194;Chemicals;level:3"><span class="heading-before"><span class="heading-label">5.1.1</span>.&#8194;</span>Chemicals</h4>
+<ul class="ul list-star compact" >
+<li class="li ul-li list-star-li compact-li" >Concentrated <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAcCAYAAAAZSVOEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNUlEQVRo3s1a0XHbMAx99GUAX0bgCEo3iLKBOkKVDZzLBD2PIHeC1iPI2aDyBvIIUTZAfyAfgqNsgWQd4U4XyxEo4OEBBEmDiDB1AdgAIMNVKv3KqF9fsmfOBWANoAawB9AB6Hnsge+3ANYTutspGwCUPGarxm3mGFXwFQJky4MXAPyEvhf6vdJvrukbwKvYwXHsnsff8P8q/jw+sw0ASACKK+NrH2qroYNQbiMc7aSTqawTDOlUYIoZxOgB7BWANPOdMljeYqxPTT3N4gwA7mVQLWzmtB9UANqZuucSQUSwGFwrELzR4eJS/TSO5VVabRJYbCIGgz8+v7eCKKM+RBj8aZJKAFAHo0pkc28hhiJTbQVx0BEwGivrSJcJwDpjSRgiyOSJCCvMEOecZxqP0sIupfh8sCqzDW/iqx0R7ZAuJ6NNox8nIjoBmAeiAsAMgnOuUF/FBGEvAvlBRM/IIz3//W0k0xmDuSA+ic8fYwQiWQgisgah5lQe5Qfyy8HoRysdWnQ9VLNh1KQ2Y6LoIvw4r3pWN6qH3xLq4au63+WkHxHtiOghoh5+WNJZ18O/EfUwJQi1uv+JLxBV1z8R4c5YDwGgc86lRP5gMLxUAThIBtxYSjXJmUDUrcmL8eW/xKRwNOo+ZZjVc8nTFBHujPVwT0THXGkwQ7y6P34hiOWUDSsDC7+iP/QprVHGenhxobAypNPN+8MAE3MCs3bOVRFlpU1h4iGljkSm4rsMYmYc60DNvYpDiAh3S14v87r2f7HxFcDjHMaKiTHow2rh62Wps86YyjU3zEcjEdqpvm2x+4eB3fQywzLP8zLWz3y+Ee8v9JLx4n7iEvYPA8FsMpwE9pZ9SLlpG9jb7CZBXNJ5SsCW4lYAKj/aAEO3l0BczHlK4CxkiLCnYr1Nwg5SE8hUfwnENrEebnOcpwSAHASQ1Uyd8aw4lsGDziYOyrlEOSKSM+k9gO+BnZPv3Ke9620g0Q6NLZFnEKU8c7sS1Lc0yDx2LXrHPwzSie89gAcG8B7AS8oxAs/kDYAjET0wVm8AHuXsrlPv2rW5UrOuXU3mn4r0KtU7drrMuHFb8bgDv+/T2P8Al0aY77SIGdQAAAAASUVORK5CYII=" alt="$HCl$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAcCAYAAAAZSVOEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNUlEQVRo3s1a0XHbMAx99GUAX0bgCEo3iLKBOkKVDZzLBD2PIHeC1iPI2aDyBvIIUTZAfyAfgqNsgWQd4U4XyxEo4OEBBEmDiDB1AdgAIMNVKv3KqF9fsmfOBWANoAawB9AB6Hnsge+3ANYTutspGwCUPGarxm3mGFXwFQJky4MXAPyEvhf6vdJvrukbwKvYwXHsnsff8P8q/jw+sw0ASACKK+NrH2qroYNQbiMc7aSTqawTDOlUYIoZxOgB7BWANPOdMljeYqxPTT3N4gwA7mVQLWzmtB9UANqZuucSQUSwGFwrELzR4eJS/TSO5VVabRJYbCIGgz8+v7eCKKM+RBj8aZJKAFAHo0pkc28hhiJTbQVx0BEwGivrSJcJwDpjSRgiyOSJCCvMEOecZxqP0sIupfh8sCqzDW/iqx0R7ZAuJ6NNox8nIjoBmAeiAsAMgnOuUF/FBGEvAvlBRM/IIz3//W0k0xmDuSA+ic8fYwQiWQgisgah5lQe5Qfyy8HoRysdWnQ9VLNh1KQ2Y6LoIvw4r3pWN6qH3xLq4au63+WkHxHtiOghoh5+WNJZ18O/EfUwJQi1uv+JLxBV1z8R4c5YDwGgc86lRP5gMLxUAThIBtxYSjXJmUDUrcmL8eW/xKRwNOo+ZZjVc8nTFBHujPVwT0THXGkwQ7y6P34hiOWUDSsDC7+iP/QprVHGenhxobAypNPN+8MAE3MCs3bOVRFlpU1h4iGljkSm4rsMYmYc60DNvYpDiAh3S14v87r2f7HxFcDjHMaKiTHow2rh62Wps86YyjU3zEcjEdqpvm2x+4eB3fQywzLP8zLWz3y+Ee8v9JLx4n7iEvYPA8FsMpwE9pZ9SLlpG9jb7CZBXNJ5SsCW4lYAKj/aAEO3l0BczHlK4CxkiLCnYr1Nwg5SE8hUfwnENrEebnOcpwSAHASQ1Uyd8aw4lsGDziYOyrlEOSKSM+k9gO+BnZPv3Ke9620g0Q6NLZFnEKU8c7sS1Lc0yDx2LXrHPwzSie89gAcG8B7AS8oxAs/kDYAjET0wVm8AHuXsrlPv2rW5UrOuXU3mn4r0KtU7drrMuHFb8bgDv+/T2P8Al0aY77SIGdQAAAAASUVORK5CYII=" class="math-inline math" style="vertical-align:-0.000em;height:0.728em"> (12 N)
+</li>
+<li class="li ul-li list-star-li compact-li" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAcCAYAAABGWNzNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE70lEQVRo3tVb0ZHjNgx92LkCmCtB6UB3HUTbgS6pILoOdLMV7Dgd2ClB7oC+CrJ2B9oSInfA/FA5DJcSCZJe6zjDWVsrgiAAAo8ADWMMljqAHoBZ6c3aeEZHBejMvYuhd48OoAKwA6ABnAFMlufJfu8BVAXm6SNl5dUBgFY4viM70NuISAH4bJVYAfhq/87tYoz5hIhGRI0d+2gZndsRwD8AXgGcjDFXbKgRUc/WfQIwAHix/H5ka+qsnI4AvhljXjPmrO3Hys7H21/WEP8FcPXNQ0QV09nO0dnB0vwxXmilo+3ckuoEaz9LPMmddn7LdvsQ2uVW6IPUS0bwMTGaOkPWBsDofUdAbHbplWMEQwJjA4D9RpWvmOAmAK1wvC5lCB5Zdwk0+PhdrhG0syUB2DvEVYJ1Nxs0gJrtvFG6Lg/+mVJoMFqdI+cqYT1BDPcgCFWPNibORsDbkyDeVVYwp43F/sZ6AAXgCuBTCj6xYw72q7IxObU9ss/XBJzROLydlpiW4IF2IdZMQus+b9ADJO84D72G0yuEB1LCLg9NizJ/iNwliqHjuT2zz4qI2gSPsgUPUAH4zh59zUH2tr14vEwKX4o90gl88HlPa+5LhAdWLPX8M+KBGPScSDcIyLaABySY4I8FS+LeoGbn258CDxBRZ4X1vxe40VRqs3gAiDaCZsEdHYQAsQFwKaC8moj2RDQS0WT/7jwhLBTi+JhTKeO0xs7bx5u58jgjWpX5Q+SClI8Ri4SP7FEbEH42HiCiwbrwCsCjMeYXY8yvFpdoIlJENAGYAp7pydmhQ8Gd7xrBa4IR5eKBz9FGFBmbRkHs6QN4oM5InMzZyv0KGj7HxEEHz4hzHcL8f5eJB+pb4YGoZFFMdi/muDhnvzKyeFModeoezZYU6xGSLgw2dUqhzZG5KdVD832IjE1/Bt55Zu5UEVFrjDl66KSGgu/MPX6JPJpdVpI9LgDUKNuiQVkkHvgmHP83A7xBDPYhFQ84izwS0ZUp6snBCjMe0AkYoGcLOgSyeLFx0I3Zl1La9+RLjpl4YDDGXIQ0ahGozMEDgThY5+IBzz2EJvD+LiaOeiqh6kZ5h5RQ8G75gShMIKn2eRQ2uIxlAqwpMrUdjIPSmJmhgHNihVWcjl/ajFFjSmb3PIBGMcZSauFjbNbNMUItyMlPBY1gKHDX4l3qBVEZQxabXgTh6Nn53qXiAVaviAVvjeDd18xs3lIc5njgkBDL369eEIMJUqt9vuNiibNuxPv72B3o3oco5AXGnDBwLzwQqh2kZvfc6uLOGpsUgVfCjNvvLM9+4bvLU8XTK2g6xQvsGb9XAL9t+v6AwBMkV/s82TidCbK04BqW9pwY+hy8Idi9U85dhHvggUVgyISqEhezi00lR6L4QTDfLuZoirdXs1WmAZyRd5XsXe4TSoygz6mte46LdeaZW5Iqbh1vMkZig0HIGx+7L4Ap7oIHvEZgLXLKvWDBj0uFzt1q6bKLI8DaUdROoMzBxF0dG9nub25Qb5hyva9oLBNmh7e3iLV93mQoUBeqyGmWd6gsr2f2TPPQI8x2csVOds4aP37A0czekSm/LZBYqi3tvafw09r/1QsbYOarhf9XS93aeIfWG3e61KtE6+4KZeIGq4T5Z1/dwm6Y39EJLrVhxuX+zGywwlY3yCyGeh/AD6G+Gq7+A+YqAuX7kzXUAAAAAElFTkSuQmCC" alt="$NaOH$" data-path="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAcCAYAAABGWNzNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE70lEQVRo3tVb0ZHjNgx92LkCmCtB6UB3HUTbgS6pILoOdLMV7Dgd2ClB7oC+CrJ2B9oSInfA/FA5DJcSCZJe6zjDWVsrgiAAAo8ADWMMljqAHoBZ6c3aeEZHBejMvYuhd48OoAKwA6ABnAFMlufJfu8BVAXm6SNl5dUBgFY4viM70NuISAH4bJVYAfhq/87tYoz5hIhGRI0d+2gZndsRwD8AXgGcjDFXbKgRUc/WfQIwAHix/H5ka+qsnI4AvhljXjPmrO3Hys7H21/WEP8FcPXNQ0QV09nO0dnB0vwxXmilo+3ckuoEaz9LPMmddn7LdvsQ2uVW6IPUS0bwMTGaOkPWBsDofUdAbHbplWMEQwJjA4D9RpWvmOAmAK1wvC5lCB5Zdwk0+PhdrhG0syUB2DvEVYJ1Nxs0gJrtvFG6Lg/+mVJoMFqdI+cqYT1BDPcgCFWPNibORsDbkyDeVVYwp43F/sZ6AAXgCuBTCj6xYw72q7IxObU9ss/XBJzROLydlpiW4IF2IdZMQus+b9ADJO84D72G0yuEB1LCLg9NizJ/iNwliqHjuT2zz4qI2gSPsgUPUAH4zh59zUH2tr14vEwKX4o90gl88HlPa+5LhAdWLPX8M+KBGPScSDcIyLaABySY4I8FS+LeoGbn258CDxBRZ4X1vxe40VRqs3gAiDaCZsEdHYQAsQFwKaC8moj2RDQS0WT/7jwhLBTi+JhTKeO0xs7bx5u58jgjWpX5Q+SClI8Ri4SP7FEbEH42HiCiwbrwCsCjMeYXY8yvFpdoIlJENAGYAp7pydmhQ8Gd7xrBa4IR5eKBz9FGFBmbRkHs6QN4oM5InMzZyv0KGj7HxEEHz4hzHcL8f5eJB+pb4YGoZFFMdi/muDhnvzKyeFModeoezZYU6xGSLgw2dUqhzZG5KdVD832IjE1/Bt55Zu5UEVFrjDl66KSGgu/MPX6JPJpdVpI9LgDUKNuiQVkkHvgmHP83A7xBDPYhFQ84izwS0ZUp6snBCjMe0AkYoGcLOgSyeLFx0I3Zl1La9+RLjpl4YDDGXIQ0ahGozMEDgThY5+IBzz2EJvD+LiaOeiqh6kZ5h5RQ8G75gShMIKn2eRQ2uIxlAqwpMrUdjIPSmJmhgHNihVWcjl/ajFFjSmb3PIBGMcZSauFjbNbNMUItyMlPBY1gKHDX4l3qBVEZQxabXgTh6Nn53qXiAVaviAVvjeDd18xs3lIc5njgkBDL369eEIMJUqt9vuNiibNuxPv72B3o3oco5AXGnDBwLzwQqh2kZvfc6uLOGpsUgVfCjNvvLM9+4bvLU8XTK2g6xQvsGb9XAL9t+v6AwBMkV/s82TidCbK04BqW9pwY+hy8Idi9U85dhHvggUVgyISqEhezi00lR6L4QTDfLuZoirdXs1WmAZyRd5XsXe4TSoygz6mte46LdeaZW5Iqbh1vMkZig0HIGx+7L4Ap7oIHvEZgLXLKvWDBj0uFzt1q6bKLI8DaUdROoMzBxF0dG9nub25Qb5hyva9oLBNmh7e3iLV93mQoUBeqyGmWd6gsr2f2TPPQI8x2csVOds4aP37A0czekSm/LZBYqi3tvafw09r/1QsbYOarhf9XS93aeIfWG3e61KtE6+4KZeIGq4T5Z1/dwm6Y39EJLrVhxuX+zGywwlY3yCyGeh/AD6G+Gq7+A+YqAuX7kzXUAAAAAElFTkSuQmCC" class="math-inline math" style="vertical-align:-0.000em;height:0.728em"> Pellets
+</li>
+<li class="li ul-li list-star-li compact-li" >Phenolphthalein
+</li>
+<li class="li ul-li list-star-li compact-li" >Methyl Orange
+</li>
+<li class="li ul-li list-star-li compact-li" >Distilled Water
+</li></ul>
+<h4 id="sec-apparatus"    style="display:block;bookmark:5.1.2.&#8194;Apparatus;level:3"><span class="heading-before"><span class="heading-label">5.1.2</span>.&#8194;</span>Apparatus</h4>
+<ul class="ul list-star compact" >
+<li class="li ul-li list-star-li compact-li" >Burettes
+</li>
+<li class="li ul-li list-star-li compact-li" >Pipettes
+</li>
+<li class="li ul-li list-star-li compact-li" >Titration Flasks
+</li>
+<li class="li ul-li list-star-li compact-li" >Measuring Flasks
+</li>
+<li class="li ul-li list-star-li compact-li" >Beakers
+</li>
+<li class="li ul-li list-star-li compact-li" >Weighing Balance
+</li></ul>
+<h3 id="sec-procedure"    style="display:block;bookmark:5.2.&#8194;Procedure;level:2"><span class="heading-before"><span class="heading-label">5.2</span>.&#8194;</span>Procedure</h3><h4 id="sec-preparation-of-naoh-solution"    style="display:block;bookmark:5.2.1.&#8194;Preparation of NaOH solution;level:3"><span class="heading-before"><span class="heading-label">5.2.1</span>.&#8194;</span>Preparation of NaOH solution</h4><h2 id="sec-references"    style="display:block;bookmark:6.&#8194;References;level:1"><span class="heading-before"><span class="heading-label">6</span>.&#8194;</span>References</h2>
+<ol class="ol compact" >
+<li class="li ol-li compact-li" >Marieb EN, Hoehn K (2010). Human anatomy &amp; physiology. San Francisco: Benjamin Cummings. ISBN 0-8053-9591-1.
+</li>
+<li class="li ol-li compact-li" >http://www.vivo.colostate.edu/hbooks/pathphys/digestion/stomach/parietal.html
+</li>
+<li class="li ol-li compact-li" >https://au.answers.yahoo.com/question/index?qid=20101020202744AAKRt2J
+</li>
+<li class="li ol-li compact-li" >http://blog.ziffi.com/280/acidity-causes-treatment-prevention-mujtaba-hussain/
+</li>
+<li class="li ol-li compact-li" >http://www.abbott.co.in/products-gastroenterology.html
+</li>
+<li class="li ol-li compact-li" >http://gelusil.com/about-gelusil/
+</li>
+<li class="li ol-li compact-li" >http://www.sciencedirect.com/science/article/pii/S0024320504006873
+</li>
+<li class="li ol-li compact-li" >https://nccih.nih.gov/health/peppermintoil
+</li>
+<li class="li ol-li compact-li" >http://www.compoundchem.com/2014/11/27/ginger/
+</li></ol>
+</div><span data-line=""></span>
+</body>
+
 </html>
