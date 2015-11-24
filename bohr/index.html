@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Bohr's Atomic Model</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/neon.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide" id="video">
+      <video autoplay="">
+        <source src="img/rutherford.ogv" type="video/mp4">
+      </video>
+    </section>
+
+    <section class="slide" id="title">
+      <h1>Bohr's Atomic Model</h1>
+    </section>
+
+    <section class="slide" id="unstable">
+      <h2>Rutherford, explain!</h2>
+      <p>Accelerating charges ought to loose energy in the form of &gamma; rays.</p>
+      <img src="img/ruth.png"/>
+      <p>What, then, makes the atom stable?</p>
+    </section>
+
+    <section class="slide" id="discontinuous">
+      <h2>Rutherford, explain!</h2>
+      <p>Even if the atom did loose energy, it should have been continuous...</p>
+      <p class="slide">
+      <img src="img/hydrogen-spectra.jpg">
+      ... which it wasn't.</p>
+      <p class="slide">We need a better theory.</p>
+    </section>
+
+    <section class="slide" id="postulates">
+      <h2>Bohr's Postulates</h2>
+      <ol>
+        <li>Electrons in atoms orbit the nucleus in circular orbits.</li>
+        <li>There exists discrete stationary orbits in which the electrons orbit stably without radiating.
+          <ul><li class="slide">It turns out that the angular momentum of these orbits are multiples of ħ</li></ul></li>
+        <li>When electrons jump from orbit to orbit, they emit/lose energy according to Plank radiation.</li>
+      </ol>
+      <img src="img/Bohr-atom-PAR.svg" style="filter: invert(1)">
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
