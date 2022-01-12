@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Agnishom Chattopadhyay</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        h4 span { bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+        .meter {
+			height: 20px;  /* Can be anything */
+			position: relative;
+			background: #555;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+			padding: 10px;
+			box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+		}
+		.meter > span {
+		  display: block;
+		  height: 100%;
+		  border-top-right-radius: 8px;
+		  border-bottom-right-radius: 8px;
+		  border-top-left-radius: 20px;
+		  border-bottom-left-radius: 20px;
+		  background-color: rgb(43,194,83);
+		  background-image: linear-gradient(
+		    center bottom,
+		    rgb(43,194,83) 37%,
+		    rgb(84,240,84) 69%
+		  );
+		  box-shadow:
+		    inset 0 2px 9px  rgba(255,255,255,0.3),
+		    inset 0 -2px 6px rgba(0,0,0,0.4);
+		  position: relative;
+		  overflow: hidden;
+		}
+
+    div.table-title {
+       display: block;
+      margin: auto;
+      max-width: 600px;
+      padding:5px;
+      width: 100%;
+    }
+
+    .table-title h3 {
+       color: #afafaf;
+       font-size: 30px;
+       font-weight: 400;
+       font-style:normal;
+       font-family: "Roboto", helvetica, arial, sans-serif;
+       text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+       text-transform:uppercase;
+    }
+
+
+    /*** Table Styles **/
+
+    .table-fill {
+      background: white;
+      border-radius:3px;
+      border-collapse: collapse;
+      height: 240px;
+      margin: auto;
+      max-width: 600px;
+      padding:5px;
+      width: 60%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      animation: float 5s infinite;
+    }
+
+    th {
+      color:#D5DDE5;;
+      background:#1b1e24;
+      border-bottom:4px solid #9ea7af;
+      border-right: 1px solid #343a45;
+      font-size:18px;
+      font-weight: 100;
+      padding:10px;
+      text-align:left;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      vertical-align:middle;
+    }
+
+    th:first-child {
+      border-top-left-radius:3px;
+    }
+
+    th:last-child {
+      border-top-right-radius:3px;
+      border-right:none;
+    }
+
+    tr {
+      border-top: 1px solid #C1C3D1;
+      border-bottom-: 1px solid #C1C3D1;
+      color:#666B85;
+      font-size:16px;
+      font-weight:normal;
+      text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    }
+
+    tr:hover td {
+      background:#4E5066;
+      color:#FFFFFF;
+      border-top: 1px solid #22262e;
+      border-bottom: 1px solid #22262e;
+    }
+
+    tr:first-child {
+      border-top:none;
+    }
+
+    tr:last-child {
+      border-bottom:none;
+    }
+
+    tr:nth-child(odd) td {
+      background:#EBEBEB;
+    }
+
+    tr:nth-child(odd):hover td {
+      background:#4E5066;
+    }
+
+    tr:last-child td:first-child {
+      border-bottom-left-radius:3px;
+    }
+
+    tr:last-child td:last-child {
+      border-bottom-right-radius:3px;
+    }
+
+    td {
+      background:#FFFFFF;
+      padding:6px;
+      text-align:left;
+      vertical-align:middle;
+      font-weight:150;
+      font-size: 15px;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+      border-right: 1px solid #C1C3D1;
+    }
+
+    td:last-child {
+      border-right: 0px;
+    }
+
+    th.text-left {
+      text-align: left;
+    }
+
+    th.text-center {
+      text-align: center;
+    }
+
+    th.text-right {
+      text-align: right;
+    }
+
+    td.text-left {
+      text-align: left;
+    }
+
+    td.text-center {
+      text-align: center;
+    }
+
+    td.text-right {
+      text-align: right;
+    }
+     </style>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <img src="images/framedMe.jpg" alt="Photo of Cthulu" id="pic"/>
+
+        <div id="contact-info" class="vcard">
+
+            <!-- Microformats! -->
+
+            <h1 class="fn">Agnishom Chattopadhyay</h1>
+
+            <p>
+                <h4>Chennai Mathematical Institute <span> BSc Mathematics and Computer Science (2016 - Present)</span></h4>
+                <br>
+                Cell: <span class="tel">+91-9903675222</span><br />
+                Email: <a class="email" href="mailto:agnishom@cmi.ac.in">agnishom@cmi.ac.in</a>
+            </p>
+        </div>
+
+        <div id="objective">
+            <p>
+                Applying for RC Bose Summer Internship Program in Cryptology, 2017
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+        <dl>
+
+            <dd class="clear"></dd>
+            <dt>Academic Grades</dt>
+            <dd>
+              <div class="table-title">
+                <h2>Grades in 10 Level Board Examinations</h2>
+              </div>
+              <table class="table-fill">
+                <thead>
+                  <tr>
+                    <th class="text-left">Subject</th>
+                    <th class="text-left">Grade Point</th>
+                  </tr>
+                </thead>
+                <tbody class="table-hover">
+                  <tr>
+                    <td class="text-left">English Comm.</td>
+                    <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Bengali</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Mathematics</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Science</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Social Science</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Foundations of IT</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-center">CGPA</td>
+                  <td class="text-center">10.0</td>
+                </tr>
+                </tbody>
+              </table>
+              <br>
+              <div class="table-title">
+                <h2>Marks in 10+2 Level Board Examinations</h2>
+              </div>
+              <table class="table-fill">
+                <thead>
+                  <tr>
+                    <th class="text-left">Subject</th>
+                    <th class="text-left">Marks</th>
+                  </tr>
+                </thead>
+                <tbody class="table-hover">
+                  <tr>
+                    <td class="text-left">English</td>
+                    <td class="text-left">91</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Physics</td>
+                  <td class="text-left">95</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Chemistry</td>
+                  <td class="text-left">95</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Mathematics</td>
+                  <td class="text-left">95</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Biology</td>
+                  <td class="text-left">95</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Bengali</td>
+                  <td class="text-left">93</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Total Percentage</td>
+                  <td class="text-center">94.0</td>
+                </tr>
+                </tbody>
+              </table>
+              <br>
+              <div class="table-title">
+                <h2>Grades in Bachelors (Semester I)</h2>
+              </div>
+              <table class="table-fill">
+                <thead>
+                  <tr>
+                    <th class="text-left">Course</th>
+                    <th class="text-left">Grade Point</th>
+                  </tr>
+                </thead>
+                <tbody class="table-hover">
+                  <tr>
+                    <td class="text-left">Algebra I</td>
+                    <td class="text-left">9.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Analysis I</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Classical Mechanics I</td>
+                  <td class="text-left">8.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Introduction to Programming</td>
+                  <td class="text-left">10.0</td>
+                </tr>
+                <tr>
+                  <td class="text-left">English</td>
+                  <td class="text-left">8.0</td>
+                </tr>
+                <tr>
+                  <td class="text-center">CGPA</td>
+                  <td class="text-center">9.2</td>
+                </tr>
+                </tbody>
+              </table>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Experience with Cryptography</dt>
+            <dd>
+                <h2>Cryptography I, Coursera <span>January 2015 - March 2015</span></h2>
+                <p> Offered by <i>Dan Boneh</i> of <i>Stanford University</i>.<br>
+                Topics included symmetric encryption, data integrity, public-key encryption, and key exchange. The course emphasized the correct use of these primitive.</p>
+                <br>
+                <h2>Cryptopal Challenges  <span>January 2017 - Present</span></h2>
+                <p> Currently solving Set 2 - Challenge 13 </p>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Achievements</dt>
+            <dd>
+            <h2>Indian National Olympiad in Informatics </h2> <br> <h2> <span>January 2016 - Indian Association for Research in Computer Science</span></h2>
+                <ul>
+                    <p><span>Qualifier</span></p>
+                </ul>
+
+            <h2>13th National Cyber Olympiad </h2> <br> <h2> <span>June 2014 - Science Olympiad Foundation</span></h2>
+                <ul>
+                    <p><span>Winner</span></p>
+                </ul>
+
+            <h2>Atmadeep <span>May 2013 - Eisamay</span></h2>
+                <ul>
+                    <p><span>Among top 25 students of the city</span></p>
+                </ul>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Skills</dt>
+            <dd>
+            	<h2>Programming Languages</h2>
+                <p>Python, Haskell, C++</p>
+
+                <h2>Other Computing Skills</h2>
+                <p>Mathematica, Paint.NET, Linux, HTML/CSS</p>
+
+                <h2>Soft Skills</h2>
+                <p>Communicating Ideas, Brainstorming</p>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Work Experience</dt>
+            <dd>
+                <h2>Brilliant.Org <span>Content Intern - June 2016 - Present</span></h2>
+                <p> Writing problems, motivating community, developing topics </p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Activities</dt>
+            <dd>
+                <h2>NPTEL - Introduction to Programming in Haskell </h2><br><h2><span>Teaching Assistant - January 2017 - April 2017</span></h2>
+                <ul>
+                    <p>Community Involvement, Creating Assignments</p>
+                </ul>
+
+                <h2>Brilliant.Org <span>Moderator - 2013 - 2016</span></h2>
+                <ul>
+                    <p>Moderated Computer Science, Combinatorics and Calculus</p>
+                </ul>
+
+                <h2>Math Is Fun Forum <span>Real Member - 2013 - Present</span></h2>
+                <ul>
+                    <p>Over 10,000 forum posts</p>
+                </ul>
+
+                <h2>DST-Inspire Internship Science Camp <span>June 2014, Kolkata</span></h2>
+                <ul>
+                    <p>JB Centre of Excellence for Student-Scientists</p>
+                </ul>
+				<h2>Adventures of The Mind <span>June 2014, Philadelphia</span></h2>
+                <ul>
+                    <p>Achievement-focused mentoring camp for the most promising high school students</p>
+                </ul>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Additional Activities</dt>
+
+            <dd>
+            <h2>Recreational Programming</h2>
+                <ul>
+                    <p>Worked on several recreational programming projects. See <a href="http://github.com/Agnishom/">http://github.com/Agnishom/</a></p>
+                </ul>
+            <h2>Coursera <span></span></h2>
+                <ul>
+                	Taken Courses in
+                    <li>Cryptography</li>
+                    <li>Mathematical Philosophy</li>
+                    <li>Social Psychology</li>
+                    <li>Microeconomics</li>
+                    <li>Game Theory</li>
+
+                </ul>
+            <h2>StackExchange Network</h2>
+                <ul>
+                    <li>Mathematics <h2> <span>1,312 Reputation</span> </h2> </li>
+                    <li>Stack Overflow <h2> <span>382 Reputation</span> </h2> </li>
+                    <li>Programming Puzzles and Code Golf <h2> <span>209 Reputation</span> </h2> </li>
+                    <li>English Language and Usage <h2> <span>282 Reputation</span> </h2> </li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Interests</dt>
+            <dd>Algorithms, Cryptography, Machine Learning, Recreational Programming, Discrete Mathematics</dd>
+
+
+            <dd class="clear"></dd>
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>
