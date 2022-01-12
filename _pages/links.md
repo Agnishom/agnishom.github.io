@@ -18,4 +18,4 @@ nav: true
     * [Weighted Automata Theory Notes](https://github.com/Agnishom/CMI-resources/raw/master/agnishom-cmi/www.cmi.ac.in/%7Eagnishom/sem6/wtat/wtat_notes.pdf)
 - A website where I have spent a large part of my childhood
     * [Math Is Fun Forum](http://www.mathisfunforum.com)
-- [Some](https://agnishom.github.io/BohrAtomicModel/) [random](direct-html/high-school/antacids.md.html) [presentations](direct-html/high-school/viscosity.md.html) I made while I was in high school
+- [Some](https://agnishom.github.io/BohrAtomicModel/) [random](https://agnishom.github.io/direct-html/high-school/antacids.md.html) [presentations](https://agnishom.github.io/direct-html/high-school/viscosity.md.html) I made while I was in high school
