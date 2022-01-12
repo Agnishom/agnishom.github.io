@@ -16,6 +16,7 @@ nav: true
     * [Real Analysis Notes, BV Rao](https://github.com/Agnishom/CMI-resources/tree/master/agnishom-cmi/www.cmi.ac.in/%7Eagnishom/sem3/analysis_notes)
     * [Complex Analysis Notes, TR Ramadas](https://github.com/Agnishom/CMI-resources/raw/master/agnishom-cmi/www.cmi.ac.in/%7Eagnishom/sem4/ComplexAnalysisUG2018.pdf)
     * [Weighted Automata Theory Notes](https://github.com/Agnishom/CMI-resources/raw/master/agnishom-cmi/www.cmi.ac.in/%7Eagnishom/sem6/wtat/wtat_notes.pdf)
+- [Resources](https://github.com/Agnishom/IOITC16) from Indian Olympiad in Informatics Training Camp, 2016
 - A website where I have spent a large part of my childhood
     * [Math Is Fun Forum](http://www.mathisfunforum.com)
 - [Some](https://agnishom.github.io/BohrAtomicModel/) [random](https://agnishom.github.io/direct-html/high-school/antacids.md.html) [presentations](https://agnishom.github.io/direct-html/high-school/viscosity.md.html) I made while I was in high school
