@@ -4,6 +4,7 @@ title: on the philosophy of rating systems
 date: 2022-02-06
 description: what makes an appropriate rating system and how to rate
 tags: rating-systems philosophy
+comments: true
 ---
 
 We encounter rating systems on such a frequent basis that we do not stop to consider their philosophical implications. I do not mean the political questions of how much we should be influenced by them, or the technological question of how to produce reccomendations based on them, but the fundamental questions of what makes an appropriate rating system and how the rational users should rate objects they consume.
