@@ -21,4 +21,4 @@ I am currently a PhD student in the Rice University, working with [Konstantinos 
 
 My research interests are broadly along the lines of formal methods, programming languages and automata theory. I have recently been working on monitoring algorithms for quantitative interpretations of temporal logic.
 
-You can find my CV [here](direct-html/resume/resume2021.htm).
+You can find my CV [here](direct-html/resume/resume2022.htm).
