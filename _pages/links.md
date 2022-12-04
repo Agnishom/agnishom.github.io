@@ -20,4 +20,6 @@ nav: true
 - A website where I have spent a large part of my childhood
     * [Math Is Fun Forum](http://www.mathisfunforum.com)
 - [Some](https://agnishom.github.io/BohrAtomicModel/) [random](https://agnishom.github.io/direct-html/high-school/antacids.md.html) [presentations](https://agnishom.github.io/direct-html/high-school/viscosity.md.html) I made while I was in high school
-- [A Brief Overview of Rust](/assets/pdf/rust-fall21.pdf) that I (co-)wrote for a course project
+- Some things I (co-)wrote for course projects
+    * [A Brief Overview of Rust](/assets/pdf/rust-fall21.pdf)
+    * [Fast Graph Similarity Search and Motif Mining via Locality Sensitive Hashing](/assets/pdf/lsh-spring21.pdf)
