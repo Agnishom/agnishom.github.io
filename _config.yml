@@ -71,8 +71,8 @@ rss_icon: false
 contact_note: >
   The best way to reach me is by email.
 
-google_analytics:  UA-119140839-1 # your google-analytics ID (format: UA-XXXXXXXXX)
-google_site_verification:  # your google-site-verification ID (Google Search Console)
+google_analytics: G-4B83L4C6YC # your google-analytics ID (format: UA-XXXXXXXXX)
+google_site_verification: x-9Y6iSuIe_eahSzGFpuag9M755nHPjn5-ax3pG1HAw # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
