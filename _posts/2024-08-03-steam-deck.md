@@ -1,6 +1,6 @@
 ---
 layout: post
-title: why I like the Steam Deck
+title: the steam deck is not evil and that's why I like it
 date: 2024-08-03
 description: in an era where tech giants increasingly control our digital experiences, the Steam Deck stands as a beacon of user freedom
 tags: enshittification
@@ -33,4 +33,4 @@ Valve's libertarian ideology has not always been an unquestionable force for goo
 
 Valve has also generally refused to take a stance against gambling websites which plug into their ecosystem, despite the allegation that this harms many users (including minors). This maybe a consequence of their libertarian philosophy, but the worse possibility is that they are disinterested in tuning down a part of their system that [profits themselves](https://www.youtube.com/watch?v=eMmNy11Mn7g).
 
-A very large share of the PC gaming market is Steam, which is a fact I do not admire. They do take a 30% cut on the sales of Steam games, which can arguably be considered rent seeking, even if it is the industry standard. I do hope the marketplace of game distribution sees more healthy competition. Nonetheless, I appreciate Valve for not pursuing aggressively anti-competitive tactics. 
+A very large share of the PC gaming market is Steam, which is a fact I do not admire. They do take a 30% cut on the sales of Steam games, which can arguably be considered [rent seeking](https://en.wikipedia.org/wiki/Rent-seeking), even if it is the industry standard. I do hope the marketplace of game distribution sees more healthy competition. Nonetheless, I appreciate Valve for not pursuing aggressively anti-competitive tactics. 
