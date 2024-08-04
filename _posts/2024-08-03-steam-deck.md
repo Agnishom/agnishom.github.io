@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I like the Steam Deck
+title: why I like the Steam Deck
 date: 2024-08-03
 description: in an era where tech giants increasingly control our digital experiences, the Steam Deck stands as a beacon of user freedom
 tags: enshittification
