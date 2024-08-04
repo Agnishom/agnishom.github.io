@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the steam deck is not evil and that's why I like it
+title: the steam deck is not evil and thats why I like it
 date: 2024-08-03
 description: in an era where tech giants increasingly control our digital experiences, the Steam Deck stands as a beacon of user freedom
 tags: enshittification
