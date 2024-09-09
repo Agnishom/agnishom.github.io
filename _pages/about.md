@@ -17,8 +17,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a PhD student in the Rice University, working with [Konstantinos Mamouras](https://kmamouras.github.io/). I graduated from Chennai Mathematical Institute with a B.Sc. in Computer Science and Mathematics in 2019.
+I obtained my Ph.D. in Computer Science from Rice University in 2024, under the supervision of [Konstantinos Mamouras](https://kmamouras.github.io/). Prior to that, I graduated from Chennai Mathematical Institute with a B.Sc. in Computer Science and Mathematics in 2019.
 
-My research interests are broadly along the lines of formal methods, programming languages and automata theory. As part of my PhD research, I am working on monitoring algorithms for quantitative interpretations of temporal logic, and also on algorithms related to regular expressions with practical extensions such as counting and lookaround assertions.
+My research interests include formal methods and programming languages. My [thesis](https://repository.rice.edu/items/b016da89-b244-4808-aaac-175592ed8ab6) explores the Coq formalization of algorithms related to temporal logic and regular expressions. I am also intersted in the theoretical aspects of automata theory and logic.
 
 You can find my CV [here](direct-html/resume/resume2023.htm).
