@@ -21,6 +21,6 @@ I am a Scientific Programmer at the [ERATO-MMSD](https://group-mmm.org/eratommsd
 
 I obtained my Ph.D. in Computer Science from Rice University in 2024, under the supervision of [Konstantinos Mamouras](https://kmamouras.github.io/). Prior to that, I graduated from Chennai Mathematical Institute with a B.Sc. in Computer Science and Mathematics in 2019.
 
-My research interests include formal methods and programming languages. My [thesis](https://repository.rice.edu/items/b016da89-b244-4808-aaac-175592ed8ab6) explores the Coq formalization of algorithms related to temporal logic and regular expressions. I am also intersted in the theoretical aspects of automata and logic.
+My research interests include formal methods and programming languages. My [thesis](/assets/pdf/thesis-24-08-08.pdf) explores the Coq formalization of algorithms related to temporal logic and regular expressions. I am also intersted in the theoretical aspects of automata and logic.
 
 You can find my CV [here](direct-html/resume/resume2024.htm).
