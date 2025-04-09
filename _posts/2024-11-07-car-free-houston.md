@@ -4,7 +4,7 @@ title: living car-free in houston
 date: 2024-11-07
 description: my experience of living in Houston without a car, and the North American obsession with them
 tags: urbanism
-comments: true
+comments: false
 ---
 
 On my second day in Houston, I decided to walk to the nearest [HEB](https://en.wikipedia.org/wiki/H-E-B) (a supermarket chain in Texas) to get groceries. It was a 1.5 kilometer walk, of about 20 minutes -- which was not so bad, although it was slightly inconvenient while carrying things back home. What was somewhat surprising to me was the lack of interesting buildings during my walk: there were no restaurants or shops -- just a lot of houses. 

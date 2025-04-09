@@ -4,7 +4,7 @@ title: the steam deck is not evil and thats why I like it
 date: 2024-08-03
 description: in an era where tech giants increasingly control our digital experiences, the Steam Deck stands as a beacon of user freedom
 tags: enshittification
-comments: true
+comments: false
 ---
 
 The [Steam Deck](https://store.steampowered.com/steamdeck) is a great gaming system. This isn't because of it's great battery life. A Nintendo Switch would probably have better battery life. It's not because of its great performance. I don't usually play AAA games, so I wouldn't know. The Steam Deck is great because of the philosophy on which it is built.
