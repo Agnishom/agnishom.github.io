@@ -23,4 +23,4 @@ I received my Ph.D. in Computer Science from Rice University in 2024, under the 
 
 My research interests include formal methods and programming languages. My [thesis](/assets/pdf/thesis-24-08-08.pdf) explores the Coq formalization of algorithms related to temporal logic and regular expressions. I am also intersted in the theoretical aspects of automata and logic.
 
-You can find my CV [here](direct-html/resume/resume2024.htm).
+You can find my CV [here](direct-html/resume/resume2025.htm).
