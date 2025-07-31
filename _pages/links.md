@@ -23,3 +23,5 @@ nav: true
 - Some things I (co-)wrote for course projects
     * [A Brief Overview of Rust](/assets/pdf/rust-fall21.pdf)
     * [Fast Graph Similarity Search and Motif Mining via Locality Sensitive Hashing](/assets/pdf/lsh-spring21.pdf)
+- Imiron's Tech Blog
+    * [Solving LinkedIn Queens with Haskell](https://imiron.io/post/linkedin-queens/)
