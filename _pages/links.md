@@ -25,3 +25,4 @@ nav: true
     * [Fast Graph Similarity Search and Motif Mining via Locality Sensitive Hashing](/assets/pdf/lsh-spring21.pdf)
 - Imiron's Tech Blog
     * [Solving LinkedIn Queens with Haskell](https://imiron.io/post/linkedin-queens/)
+- [Bachata in Tokyo](/tokyo-bachata/)
