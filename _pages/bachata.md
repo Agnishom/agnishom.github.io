@@ -28,6 +28,7 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Facebook](https://www.facebook.com/Movelabjapan) · [Instagram](https://www.instagram.com/movelabjapan/)
 - Palante Dance
   - [Linktree](https://linktr.ee/palantedance) · [Instagram](https://www.instagram.com/ryu_palante)
+
 # Event Pages
 
 - Facebook Groups
