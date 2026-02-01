@@ -11,6 +11,8 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Google Map](https://maps.app.goo.gl/EJAqffEPZVHVyYZE9) · [Website](https://elcafelatino.com/) · [Facebook](https://www.facebook.com/elcafelatinojapan/) · [Instagram](https://www.instagram.com/elcafelatinojapan/)
 - Studio Pepe 2
   - [Google Map](https://maps.app.goo.gl/4cf34yaRWkJ8btE77) · [Website](https://studio-pepe.com/)
+- La Tropi Azabu
+  - [Google Map](https://maps.app.goo.gl/rnoaaBAUSGBA7KL58) · [Facebook](https://www.facebook.com/people/La-Tropi-Azabu/100057404951236/) · [Instagram](https://www.instagram.com/la_tropiazabu/)
 
 # Organizers
 
@@ -28,13 +30,16 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Facebook](https://www.facebook.com/Movelabjapan) · [Instagram](https://www.instagram.com/movelabjapan/)
 - Palante Dance
   - [Linktree](https://linktr.ee/palantedance) · [Instagram](https://www.instagram.com/ryu_palante)
+- Karin Ando Dance Project
+  - [Facebook](https://www.facebook.com/p/Karin-Ando-Bachata-100066577637563/) · [Instagram](https://www.instagram.com/karin_ando_dance_project/)
 
-# Event Pages
+# Events
 
 - Facebook Groups
   - [La Bachata Tokyo info💃🏻🍸💋](https://www.facebook.com/groups/664949752076612)
   - [ROPPONGI TONGHT*(LATIN LIVE & EVENTS)](https://www.facebook.com/groups/1500020410245704)
   - [BACHATA❤️KIZOMBA](https://www.facebook.com/groups/710193796943679)
+  - [Bachata,Kizomba,Salsa Info in Japan](https://www.facebook.com/groups/872159739822196)
 - Meetup
   - [La Bachata Tokyo](https://www.meetup.com/la_bachata_tokyo/)
   - [Tokyo Bachata Dance](https://www.meetup.com/tokyo-bachata-dance/)
