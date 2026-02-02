@@ -25,4 +25,6 @@ My research interests include formal methods and programming languages. My [thes
 
 My favorite programming language is Haskell. I generally appreciate programming languages and tools based on sound theoretical foundations.
 
+I am on the review committee of [PLDI 2026](https://pldi26.sigplan.org/committee/pldi-2026-papers-pldi-review-committee) and the artefact evaluation committee of [FM 2026](https://conf.researchr.org/committee/fm-2026/fm-2026-artifact-evaluation-artifact-evaluation-committee).
+
 You can find my CV [here](direct-html/resume/resume2025.htm).

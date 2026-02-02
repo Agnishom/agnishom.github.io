@@ -26,3 +26,4 @@ nav: true
 - Imiron's Tech Blog
     * [Solving LinkedIn Queens with Haskell](https://imiron.io/post/linkedin-queens/)
 - [Bachata in Tokyo](/tokyo-bachata/)
+- [Bookstores in Houston](/houston-bookstores/)
