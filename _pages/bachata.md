@@ -32,6 +32,10 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Linktree](https://linktr.ee/palantedance) · [Instagram](https://www.instagram.com/ryu_palante)
 - Karin Ando Dance Project
   - [Facebook](https://www.facebook.com/p/Karin-Ando-Bachata-100066577637563/) · [Instagram](https://www.instagram.com/karin_ando_dance_project/)
+- Emi Ono
+  - [Facebook](https://www.facebook.com/profile.php?id=100034193902195) · [Instagram](https://www.instagram.com/emi.ono.7545/)
+- Masaki & Hisae
+  - [Website](https://mm-salsa.jp/masaki/) · [Instagram](https://www.instagram.com/bachata.masaki/)
 
 # Events
 
