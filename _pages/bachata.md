@@ -36,6 +36,8 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Facebook](https://www.facebook.com/profile.php?id=100034193902195) · [Instagram](https://www.instagram.com/emi.ono.7545/)
 - Masaki & Hisae
   - [Website](https://mm-salsa.jp/masaki/) · [Instagram](https://www.instagram.com/bachata.masaki/)
+- Carlos Garcia
+  - [Website](http://www.salsabrosa.jp/) · [Instagram](https://www.instagram.com/salsabiendo/)
 
 # Events
 
