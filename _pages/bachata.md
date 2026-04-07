@@ -53,3 +53,5 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Tokyo Bachata Dance](https://www.meetup.com/tokyo-bachata-dance/)
 - Salsa Calendar
   - [Website](https://salsa-calendar.chips.jp/locations) · [Android](https://play.google.com/store/apps/details?id=jp.sproject.salsa_caledar&hl=en) · [iOS](https://apps.apple.com/ro/app/salsacalendar/id1571015243)
+- Salsa Vida
+  - [Website](https://www.salsavida.com/guides/japan/tokyo/)
