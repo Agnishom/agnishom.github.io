@@ -40,6 +40,12 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Instagram](https://www.instagram.com/cobachata_tokyo/)
 - Carlos Garcia
   - [Website](http://www.salsabrosa.jp/) · [Instagram](https://www.instagram.com/salsabiendo/)
+- Shin & Mai
+  - [Instagram](https://www.instagram.com/shinmai.bachata/)
+- John Michal Hearth Bilecki
+  - [Facebook](https://www.facebook.com/jon.bilecki) · [Instagram](https://www.instagram.com/jon_bilecki/)
+- Erick Omiza
+  - [Facebook](https://www.facebook.com/erick.omiza/) · [Instagram](https://www.instagram.com/omizaerick/)
 
 # Events
 
@@ -57,3 +63,5 @@ description: Various Resources for Bachata Dancers in Tokyo
   - [Instagram](https://www.instagram.com/tokyobachatacalendar)
 - Salsa Vida
   - [Website](https://www.salsavida.com/guides/japan/tokyo/)
+- SURU Dance
+  - [Website](https://suru.dance/events?category=Socials&style=All&location=Tokyo,+Japan&date=upcoming)
